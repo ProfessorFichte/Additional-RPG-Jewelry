@@ -1,0 +1,48 @@
+{
+  "itemGroup.additional_rpg_jewelry.general": "Additional RPG Jewelry",
+
+  "item.additional_rpg_jewelry.cactea_ring": "Kaktusring",
+  "item.additional_rpg_jewelry.dripstone_necklace": "Tropfsteinkette",
+
+  "item.additional_rpg_jewelry.sky_ring": "Himmelsring",
+  "item.additional_rpg_jewelry.netherite_sky_ring": "Netherit Himmelsring",
+  "item.additional_rpg_jewelry.sky_necklace": "Himmelskette",
+  "item.additional_rpg_jewelry.netherite_sky_necklace": "Netherit Himmelskette",
+  "item.additional_rpg_jewelry.earth_ring": "Gebirgsring",
+  "item.additional_rpg_jewelry.netherite_earth_ring": "Netherit Gebirgsring",
+  "item.additional_rpg_jewelry.earth_necklace": "Gebirgskette",
+  "item.additional_rpg_jewelry.netherite_earth_necklace": "Netherit Gebirgskette",
+  "item.additional_rpg_jewelry.ocean_ring": "Ozeanring",
+  "item.additional_rpg_jewelry.netherite_ocean_ring": "Netherit Ozeanring",
+  "item.additional_rpg_jewelry.ocean_necklace": "Ozeankette",
+  "item.additional_rpg_jewelry.netherite_ocean_necklace": "Netherit Ozeankette",
+  "item.additional_rpg_jewelry.rage_ring": "Nordischer Runenring",
+  "item.additional_rpg_jewelry.netherite_rage_ring": "Netherit Nordischer Runenring",
+  "item.additional_rpg_jewelry.rage_necklace": "Nordische Runenkette",
+  "item.additional_rpg_jewelry.netherite_rage_necklace": "Netherit Nordische Runenkette",
+
+  "item.additional_rpg_jewelry.unique_rage_ring": "ᛈᛦᛋ",
+  "item.additional_rpg_jewelry.unique_rage_ring.lore": "Dieser Ring hat eine einschüchternde Aura, wer könnte diese Runen lesen?",
+  "item.additional_rpg_jewelry.unique_rage_necklace": "Svablods Anhänger",
+  "item.additional_rpg_jewelry.unique_rage_necklace.lore": "Er verkündete seinen Anbetern nur ein Gebot: Töten.",
+
+  "item.additional_rpg_jewelry.unique_earth_ring": "Tiefer Obsidianring",
+  "item.additional_rpg_jewelry.unique_earth_ring.lore": "Tief in den Höhlen geschmiedet, vielleicht von Zwergen?",
+  "item.additional_rpg_jewelry.unique_earth_necklace": "Obsidian Blüte",
+  "item.additional_rpg_jewelry.unique_earth_necklace.lore": "Es ist so schwer, fast zu schwer.",
+
+  "item.additional_rpg_jewelry.unique_ocean_ring": "Auge des Großwächters",
+  "item.additional_rpg_jewelry.unique_ocean_ring.lore": "Es blinzekt, immer noch....?",
+  "item.additional_rpg_jewelry.unique_ocean_necklace": "Verlorenes Amulett von Atlantis",
+  "item.additional_rpg_jewelry.unique_ocean_necklace.lore": "Ein verlorenes Relikt einer vergessenen Zivilisation.",
+
+  "item.additional_rpg_jewelry.unique_sky_ring": "Bernstein-Aetherring",
+  "item.additional_rpg_jewelry.unique_sky_ring.lore": "Geschmiedet aus einem heiligen Baum in einer noch unbekannten Welt",
+  "item.additional_rpg_jewelry.unique_sky_necklace": "Zanit-Aether-Anhänger",
+  "item.additional_rpg_jewelry.unique_sky_necklace.lore": "Von Walküren in einer noch unbekannten Welt geschmiedet.",
+
+  "item.additional_rpg_jewelry.vampire_ring": "Ring von Regis",
+  "item.additional_rpg_jewelry.vampire_ring.lore": "Ich brauche Blut...",
+  "item.additional_rpg_jewelry.vampire_necklace": "Kette von Gharasham",
+  "item.additional_rpg_jewelry.vampire_necklace.lore": "Nac thi sel me thaur?"
+}

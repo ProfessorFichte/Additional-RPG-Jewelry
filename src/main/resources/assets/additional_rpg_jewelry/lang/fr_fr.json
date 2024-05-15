@@ -1,0 +1,48 @@
+{
+  "itemGroup.additional_rpg_jewelry.general": "Bijoux supplémentaires pour RPG",
+
+  "item.additional_rpg_jewelry.cactea_ring": "Bague de cactus",
+  "item.additional_rpg_jewelry.dripstone_necklace": "Collier de stalactites",
+
+  "item.additional_rpg_jewelry.sky_ring": "Bague céleste",
+  "item.additional_rpg_jewelry.netherite_sky_ring": "Bague céleste en Netherite",
+  "item.additional_rpg_jewelry.sky_necklace": "Collier céleste",
+  "item.additional_rpg_jewelry.netherite_sky_necklace": "Collier céleste en Netherite",
+  "item.additional_rpg_jewelry.earth_ring": "Bague de montagne",
+  "item.additional_rpg_jewelry.netherite_earth_ring": "Bague de montagne en Netherite",
+  "item.additional_rpg_jewelry.earth_necklace": "Collier de montagne",
+  "item.additional_rpg_jewelry.netherite_earth_necklace": "Collier de montagne en Netherite",
+  "item.additional_rpg_jewelry.ocean_ring": "Bague océanique",
+  "item.additional_rpg_jewelry.netherite_ocean_ring": "Bague océanique en Netherite",
+  "item.additional_rpg_jewelry.ocean_necklace": "Collier océanique",
+  "item.additional_rpg_jewelry.netherite_ocean_necklace": "Collier océanique en Netherite",
+  "item.additional_rpg_jewelry.rage_ring": "Bague de rune Viking",
+  "item.additional_rpg_jewelry.netherite_rage_ring": "Bague de rune Viking en Netherite",
+  "item.additional_rpg_jewelry.rage_necklace": "Collier de rune Viking",
+  "item.additional_rpg_jewelry.netherite_rage_necklace": "Collier de rune Viking en Netherite",
+
+  "item.additional_rpg_jewelry.unique_rage_ring": "ᛈᛦᛋ",
+  "item.additional_rpg_jewelry.unique_rage_ring.lore": "Cette bague dégage une aura intimidante. Qui pourrait lire ces runes ?",
+  "item.additional_rpg_jewelry.unique_rage_necklace": "Pendentif de Svablods",
+  "item.additional_rpg_jewelry.unique_rage_necklace.lore": "Il proclama à ses adorateurs une seule commandement : Tuer.",
+
+  "item.additional_rpg_jewelry.unique_earth_ring": "Bague d'obsidienne profonde",
+  "item.additional_rpg_jewelry.unique_earth_ring.lore": "Forgée au plus profond des cavernes, peut-être par des nains ?",
+  "item.additional_rpg_jewelry.unique_earth_necklace": "Fleur d'obsidienne",
+  "item.additional_rpg_jewelry.unique_earth_necklace.lore": "Elle est si lourde, presque trop lourde.",
+
+  "item.additional_rpg_jewelry.unique_ocean_ring": "Œil des Gardiens Anciens",
+  "item.additional_rpg_jewelry.unique_ocean_ring.lore": "Il cligne toujours... ?",
+  "item.additional_rpg_jewelry.unique_ocean_necklace": "Amulette perdue d'Atlantis",
+  "item.additional_rpg_jewelry.unique_ocean_necklace.lore": "Un relique perdu d'une civilisation oubliée.",
+
+  "item.additional_rpg_jewelry.unique_sky_ring": "Bague d'ambre aérienne",
+  "item.additional_rpg_jewelry.unique_sky_ring.lore": "Créée à partir d'un arbre sacré dans un monde encore inconnu",
+  "item.additional_rpg_jewelry.unique_sky_necklace": "Pendentif de Zanite aérien",
+  "item.additional_rpg_jewelry.unique_sky_necklace.lore": "Forgé par les Valkyries dans un monde encore inconnu.",
+
+  "item.additional_rpg_jewelry.vampire_ring": "Anneau de Regis",
+  "item.additional_rpg_jewelry.vampire_ring.lore": "J'ai besoin de sang...",
+  "item.additional_rpg_jewelry.vampire_necklace": "Chaîne de Gharasham",
+  "item.additional_rpg_jewelry.vampire_necklace.lore": "Nac thi sel me thaur ?"
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:gold_ingot"
+    },
+    "B": {
+      "item": "minecraft:chain"
+    },
+    "C": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "pattern": [
+    " B ",
+    "A A",
+    " C "
+  ],
+  "result": {
+    "item": "additional_rpg_jewelry:netherite_rage_ring"
+  }
+}

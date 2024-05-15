@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:prismarine_crystals"
+    },
+    "B": {
+      "item": "jewelry:sapphire"
+    },
+    "C": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "pattern": [
+    " B ",
+    "A A",
+    " C "
+  ],
+  "result": {
+    "item": "additional_rpg_jewelry:netherite_ocean_ring"
+  }
+}

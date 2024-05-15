@@ -1,0 +1,45 @@
+{
+	"schemaVersion": 1,
+	"id": "additional_rpg_jewelry",
+	"version": "${version}",
+	"name": "Additional RPG Jewelry",
+	"description": "Add-On for the Jewelry Mod, adding jewelry for the More RPG Classes Series.",
+	"authors": [
+		"Fichte"
+	],
+	"contact": {
+		"sources": "https://github.com/ProfessorFichte"
+	},
+	"license": "MIT",
+	"icon": "assets/additional_rpg_jewelry/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+          "net.additional_jewelry.AdditionalJewelry"
+		]
+	},
+	"mixins": [
+		"additional_rpg_jewelry.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"more_rpg_classes": ">=1.1.4",
+		"jewelry": ">=1.3.0+1.20.1"
+	},
+	"suggests": {
+		"berserker_rpg": "*",
+		"elemental_wizards_rpg": "*",
+		"forcemaster_rpg": "*",
+		"witcher_rpg": "*"
+	},
+	"custom": {
+		"modmenu": {
+			"links": {
+				"modmenu.discord": "https://discord.gg/AShKd5XrTu"
+			}
+		}
+	}
+}
