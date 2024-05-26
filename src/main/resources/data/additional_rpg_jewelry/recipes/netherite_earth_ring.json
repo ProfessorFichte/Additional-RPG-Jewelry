@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:iron_ingot"
+    },
+    "B": {
+      "item": "jewelry:citrine"
+    },
+    "C": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "pattern": [
+    " B ",
+    "A A",
+    " C "
+  ],
+  "result": {
+    "item": "additional_rpg_jewelry:netherite_earth_ring"
+  }
+}
