@@ -27,8 +27,8 @@ public class Default {
         loot.item_groups.put(jewelry_tier_2, new LootConfig.ItemGroup(List.of(
                 Items.ocean_ring.id().toString(),
                 Items.ocean_necklace.id().toString(),
-                //Items.earth_necklace.id().toString(),
-                //Items.earth_ring.id().toString(),
+                Items.earth_necklace.id().toString(),
+                Items.earth_ring.id().toString(),
                 //Items.sky_necklace.id().toString(),
                 //Items.sky_ring.id().toString(),
                 Items.rage_necklace.id().toString(),
@@ -42,8 +42,8 @@ public class Default {
         loot.item_groups.put(jewelry_tier_3, new LootConfig.ItemGroup(List.of(
                 Items.netherite_ocean_ring.id().toString(),
                 Items.netherite_ocean_necklace.id().toString(),
-                //Items.netherite_earth_necklace.id().toString(),
-                //Items.netherite_earth_ring.id().toString(),
+                Items.netherite_earth_necklace.id().toString(),
+                Items.netherite_earth_ring.id().toString(),
                 //Items.netherite_sky_necklace.id().toString(),
                 //Items.netherite_sky_ring.id().toString(),
                 Items.netherite_rage_necklace.id().toString(),
@@ -57,8 +57,8 @@ public class Default {
         loot.item_groups.put(jewelry_tier_4, new LootConfig.ItemGroup(List.of(
                 Items.unique_ocean_ring.id().toString(),
                 Items.unique_ocean_necklace.id().toString(),
-                //Items.unique_earth_necklace.id().toString(),
-                //Items.unique_earth_ring.id().toString(),
+                Items.unique_earth_necklace.id().toString(),
+                Items.unique_earth_ring.id().toString(),
                 //Items.unique_sky_ring.id().toString(),
                 //Items.unique_sky_necklace.id().toString(),
                 Items.unique_rage_necklace.id().toString(),
