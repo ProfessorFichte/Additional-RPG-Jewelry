@@ -1,0 +1,48 @@
+{
+  "itemGroup.additional_rpg_jewelry.general": "Additional RPG Jewelry",
+
+  "item.additional_rpg_jewelry.cactea_ring": "Кактусовое Кольцо",
+  "item.additional_rpg_jewelry.dripstone_necklace": "Сталактитово Ожерелье",
+
+  "item.additional_rpg_jewelry.sky_ring": "Небесное Кольцо",
+  "item.additional_rpg_jewelry.netherite_sky_ring": "Незеритовое Небесное Кольцо",
+  "item.additional_rpg_jewelry.sky_necklace": "Небесное Ожерелье",
+  "item.additional_rpg_jewelry.netherite_sky_necklace": "Незеритовое Небесное Ожерелье",
+  "item.additional_rpg_jewelry.earth_ring": "Горное Кольцо",
+  "item.additional_rpg_jewelry.netherite_earth_ring": "Незеритовое Горное Кольцо",
+  "item.additional_rpg_jewelry.earth_necklace": "Горное Ожерелье",
+  "item.additional_rpg_jewelry.netherite_earth_necklace": "Незеритовое Горное Ожерелье",
+  "item.additional_rpg_jewelry.ocean_ring": "Океанское Кольцо",
+  "item.additional_rpg_jewelry.netherite_ocean_ring": "Незеритовое Океанское Кольцо",
+  "item.additional_rpg_jewelry.ocean_necklace": "Океанское Ожерелье",
+  "item.additional_rpg_jewelry.netherite_ocean_necklace": "Незеритовое Океанское Ожерелье",
+  "item.additional_rpg_jewelry.rage_ring": "Руначеское Кольцо Викинга",
+  "item.additional_rpg_jewelry.netherite_rage_ring": "Незеритовое Руническое Кольцо Викинга",
+  "item.additional_rpg_jewelry.rage_necklace": "Руническое Ожерелье Викингаe",
+  "item.additional_rpg_jewelry.netherite_rage_necklace": "Незеритовое Руническое Ожерелье Викингаe",
+
+  "item.additional_rpg_jewelry.unique_rage_ring": "ᛈᛦᛋ",
+  "item.additional_rpg_jewelry.unique_rage_ring.lore": "Это кольцо излучает устрашающую ауру. Кто может прочесть эти руны?",
+  "item.additional_rpg_jewelry.unique_rage_necklace": "Подвеска Сваблода",
+  "item.additional_rpg_jewelry.unique_rage_necklace.lore": "Он провозгласил своим поклонникам всего одну заповедь: Убивай.",
+
+  "item.additional_rpg_jewelry.unique_earth_ring": "Глубинное Обсидиановое Кольцо",
+  "item.additional_rpg_jewelry.unique_earth_ring.lore": "Выкованно в глубинах пещер, возможно, дворфами?",
+  "item.additional_rpg_jewelry.unique_earth_necklace": "Обсидиановый Цветок",
+  "item.additional_rpg_jewelry.unique_earth_necklace.lore": "Он очень тяжёлый, может быть даже слишком тяжёлый",
+
+  "item.additional_rpg_jewelry.unique_ocean_ring": "Глаз Древнего Стража",
+  "item.additional_rpg_jewelry.unique_ocean_ring.lore": "Он всё-ещё... моргает?",
+  "item.additional_rpg_jewelry.unique_ocean_necklace": "Потерянный Амулет Атлантиды",
+  "item.additional_rpg_jewelry.unique_ocean_necklace.lore": "Потерянный реликт забытой цивилизации.",
+
+  "item.additional_rpg_jewelry.unique_sky_ring": "Янтарное Эфирное Кольцо",
+  "item.additional_rpg_jewelry.unique_sky_ring.lore": "Выкованно из священного дерева в еще неизведанном мире",
+  "item.additional_rpg_jewelry.unique_sky_necklace": "Занитовый Эфирный Подвес",
+  "item.additional_rpg_jewelry.unique_sky_necklace.lore": "Выкованно валькириями в еще неизведанном мире.",
+
+  "item.additional_rpg_jewelry.vampire_ring": "Кольцо Региса",
+  "item.additional_rpg_jewelry.vampire_ring.lore": "Мне нужна кровь...",
+  "item.additional_rpg_jewelry.vampire_necklace": "Цепь Гарашама",
+  "item.additional_rpg_jewelry.vampire_necklace.lore": "Зачем ты разбудил меня из моей могилы?"
+}
