@@ -290,13 +290,13 @@ public class Items {
             new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:adrenaline_modifier")), 0.2F , EntityAttributeModifier.Operation.MULTIPLY_BASE),
             new ItemConfig.AttributeModifier("generic.attack_damage", tier_3_physical_multiplier, EntityAttributeModifier.Operation.MULTIPLY_BASE)
             )));
-    public static Entry griffin_school_medallion = add(new Identifier(AdditionalJewelry.MOD_ID, "griffin_school_medallion"), Rarity.UNCOMMON, new ItemConfig.Item(
+    public static Entry griffin_school_medallion = add(new Identifier(AdditionalJewelry.MOD_ID, "griffin_school_medallion"),  Rarity.RARE, true ,new ItemConfig.Item(
             List.of(new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:sign_intensity")), tier_3_spell_multiplier , EntityAttributeModifier.Operation.MULTIPLY_BASE),
             new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:adrenaline_modifier")), 0.12F , EntityAttributeModifier.Operation.MULTIPLY_BASE),
             new ItemConfig.AttributeModifier(SpellPowerMechanics.CRITICAL_DAMAGE.id, tier_3_secondary_multiplier, EntityAttributeModifier.Operation.MULTIPLY_BASE),
             new ItemConfig.AttributeModifier(SpellPowerMechanics.HASTE.id, tier_3_secondary_multiplier, EntityAttributeModifier.Operation.MULTIPLY_BASE)
             )));
-    public static Entry wolf_school_medallion = add(new Identifier(AdditionalJewelry.MOD_ID, "wolf_school_medallion"), Rarity.UNCOMMON, new ItemConfig.Item(
+    public static Entry wolf_school_medallion = add(new Identifier(AdditionalJewelry.MOD_ID, "wolf_school_medallion"),  Rarity.RARE, true ,new ItemConfig.Item(
             List.of(
             new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:sign_intensity")), tier_3_spell_multiplier , EntityAttributeModifier.Operation.MULTIPLY_BASE),
             new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:adrenaline_modifier")), 0.15F , EntityAttributeModifier.Operation.MULTIPLY_BASE),
