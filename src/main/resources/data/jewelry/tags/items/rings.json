@@ -13,6 +13,23 @@
     "additional_rpg_jewelry:unique_rage_ring",
     "additional_rpg_jewelry:sky_ring",
     "additional_rpg_jewelry:netherite_sky_ring",
-    "additional_rpg_jewelry:unique_sky_ring"
+    "additional_rpg_jewelry:unique_sky_ring",
+
+    {
+      "id": "additional_rpg_jewelry:silver_sapphire_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:meteorite_silver_sapphire_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:steel_jade_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:dark_steel_jade_ring",
+      "required": false
+    }
   ]
 }

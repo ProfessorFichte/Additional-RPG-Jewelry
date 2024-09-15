@@ -1,3 +1,12 @@
+1.0.4
+- code clean up
+- added optional witcher class mod jewelry
+
+1.0.3
+- russian translation thanks to Rem-u
+- now use the loot injection of Spell Engine / RPG Series for Jewelry
+- buffed rage, vampire & Damage Reflect jewelry
+
 1.0.2
 - forgot to add the earth jewelry recipes, just added them to the loot pool
 
