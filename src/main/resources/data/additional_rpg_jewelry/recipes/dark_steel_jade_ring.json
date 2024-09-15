@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "witcher_rpg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "witcher_rpg:dark_steel_ingot"
+    },
+    "B": {
+      "item": "jewelry:jade"
+    }
+  },
+  "pattern": [
+    " B ",
+    "A A",
+    " A "
+  ],
+  "result": {
+    "id": "additional_rpg_jewelry:dark_steel_jade_ring"
+  }
+}

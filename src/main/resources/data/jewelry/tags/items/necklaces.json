@@ -13,6 +13,23 @@
     "additional_rpg_jewelry:unique_rage_necklace",
     "additional_rpg_jewelry:sky_necklace",
     "additional_rpg_jewelry:netherite_sky_necklace",
-    "additional_rpg_jewelry:unique_sky_necklace"
+    "additional_rpg_jewelry:unique_sky_necklace",
+
+    {
+      "id": "additional_rpg_jewelry:bear_school_medallion",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:cat_school_medallion",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:griffin_school_medallion",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:wolf_school_medallion",
+      "required": false
+    }
   ]
 }

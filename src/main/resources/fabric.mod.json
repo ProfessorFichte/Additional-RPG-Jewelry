@@ -33,7 +33,7 @@
 		"berserker_rpg": "*",
 		"elemental_wizards_rpg": "*",
 		"forcemaster_rpg": "*",
-		"witcher_rpg": "*"
+		"witcher_rpg": ">=1.1.0"
 	},
 	"custom": {
 		"modmenu": {

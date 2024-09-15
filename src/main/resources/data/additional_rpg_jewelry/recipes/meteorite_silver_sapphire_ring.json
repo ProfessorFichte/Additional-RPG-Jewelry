@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "witcher_rpg"
+      ]
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "witcher_rpg:meteorite_silver_ingot"
+    },
+    "B": {
+      "item": "jewelry:sapphire"
+    }
+  },
+  "pattern": [
+    " B ",
+    "A A",
+    " A "
+  ],
+  "result": {
+    "id": "additional_rpg_jewelry:meteorite_silver_sapphire_ring"
+  }
+}
