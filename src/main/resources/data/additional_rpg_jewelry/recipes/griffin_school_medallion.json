@@ -9,9 +9,6 @@
     },
     "C": {
       "item": "witcher_rpg:meteorite_silver_ingot"
-    },
-    "D": {
-      "item": "witcher_rpg:dark_steel_ingot"
     }
   },
   "pattern": [
@@ -20,6 +17,6 @@
     "CCC"
   ],
   "result": {
-    "id": "additional_rpg_jewelry:griffin_school_medallion"
+    "item": "additional_rpg_jewelry:griffin_school_medallion"
   }
 }
