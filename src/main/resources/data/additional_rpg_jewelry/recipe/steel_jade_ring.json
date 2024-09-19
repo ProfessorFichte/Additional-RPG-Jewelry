@@ -10,7 +10,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "A": {
-      "item": "witcher_rpg:dark_steel_ingot"
+      "tag": "witcher_rpg:steel_ingots"
     },
     "B": {
       "item": "jewelry:jade"
@@ -22,6 +22,6 @@
     " A "
   ],
   "result": {
-    "item": "additional_rpg_jewelry:dark_steel_jade_ring"
+    "id": "additional_rpg_jewelry:steel_jade_ring"
   }
 }

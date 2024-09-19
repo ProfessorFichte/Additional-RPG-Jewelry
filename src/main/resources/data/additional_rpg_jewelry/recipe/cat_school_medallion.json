@@ -15,19 +15,16 @@
     "B": {
       "tag": "witcher_rpg:silver_ingots"
     },
-    "C": {
-      "item": "witcher_rpg:meteorite_silver_ingot"
-    },
     "D": {
       "item": "witcher_rpg:dark_steel_ingot"
     }
   },
   "pattern": [
     " A ",
-    "CBC",
-    "DCD"
+    "DDD",
+    "DBD"
   ],
   "result": {
-    "item": "additional_rpg_jewelry:wolf_school_medallion"
+    "id": "additional_rpg_jewelry:cat_school_medallion"
   }
 }

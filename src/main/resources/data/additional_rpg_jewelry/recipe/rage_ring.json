@@ -5,18 +5,15 @@
       "item": "minecraft:iron_ingot"
     },
     "B": {
-      "item": "jewelry:citrine"
-    },
-    "C": {
-      "item": "minecraft:netherite_ingot"
+      "item": "minecraft:chain"
     }
   },
   "pattern": [
     " B ",
     "A A",
-    " C "
+    " A "
   ],
   "result": {
-    "item": "additional_rpg_jewelry:netherite_earth_ring"
+    "id": "additional_rpg_jewelry:rage_ring"
   }
 }

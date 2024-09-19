@@ -10,10 +10,10 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "A": {
-      "tag": "witcher_rpg:steel_ingots"
+      "tag": "witcher_rpg:silver_ingots"
     },
     "B": {
-      "item": "jewelry:jade"
+      "item": "jewelry:sapphire"
     }
   },
   "pattern": [
@@ -22,6 +22,6 @@
     " A "
   ],
   "result": {
-    "item": "additional_rpg_jewelry:steel_jade_ring"
+    "id": "additional_rpg_jewelry:silver_sapphire_ring"
   }
 }

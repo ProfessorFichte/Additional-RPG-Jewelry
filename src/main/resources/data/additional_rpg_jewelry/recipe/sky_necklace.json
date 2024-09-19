@@ -5,15 +5,18 @@
       "item": "minecraft:string"
     },
     "B": {
-      "item": "minecraft:bone"
+      "item": "minecraft:copper_ingot"
+    },
+    "C": {
+      "item": "jewelry:jade"
     }
   },
   "pattern": [
     " A ",
-    " A ",
-    " B "
+    " B ",
+    " C "
   ],
   "result": {
-    "item": "additional_rpg_jewelry:rage_necklace"
+    "id": "additional_rpg_jewelry:sky_necklace"
   }
 }

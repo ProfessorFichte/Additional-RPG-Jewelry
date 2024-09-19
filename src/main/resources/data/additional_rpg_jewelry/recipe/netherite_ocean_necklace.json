@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "A": {
-      "item": "minecraft:iron_ingot"
+      "item": "minecraft:prismarine_crystals"
     },
     "B": {
       "item": "minecraft:string"
@@ -11,7 +11,7 @@
       "item": "minecraft:netherite_ingot"
     },
     "D": {
-      "item": "jewelry:citrine"
+      "item": "jewelry:sapphire"
     }
   },
   "pattern": [
@@ -20,6 +20,6 @@
     " D "
   ],
   "result": {
-    "item": "additional_rpg_jewelry:netherite_earth_necklace"
+    "id": "additional_rpg_jewelry:netherite_ocean_necklace"
   }
 }

@@ -10,18 +10,21 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "A": {
-      "tag": "witcher_rpg:silver_ingots"
+      "item": "minecraft:chain"
     },
     "B": {
-      "item": "jewelry:sapphire"
+      "tag": "witcher_rpg:silver_ingots"
+    },
+    "D": {
+      "item": "witcher_rpg:dark_steel_ingot"
     }
   },
   "pattern": [
-    " B ",
-    "A A",
-    " A "
+    " A ",
+    "DBD",
+    "DDD"
   ],
   "result": {
-    "item": "additional_rpg_jewelry:silver_sapphire_ring"
+    "id": "additional_rpg_jewelry:bear_school_medallion"
   }
 }

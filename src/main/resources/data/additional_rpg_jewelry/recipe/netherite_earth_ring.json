@@ -2,21 +2,21 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "A": {
-      "item": "minecraft:string"
+      "item": "minecraft:iron_ingot"
     },
     "B": {
-      "item": "minecraft:bone"
+      "item": "jewelry:citrine"
     },
     "C": {
       "item": "minecraft:netherite_ingot"
     }
   },
   "pattern": [
-    " A ",
-    " C ",
-    " B "
+    " B ",
+    "A A",
+    " C "
   ],
   "result": {
-    "item": "additional_rpg_jewelry:netherite_rage_necklace"
+    "id": "additional_rpg_jewelry:netherite_earth_ring"
   }
 }

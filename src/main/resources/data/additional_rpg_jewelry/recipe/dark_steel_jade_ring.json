@@ -10,21 +10,18 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "A": {
-      "item": "minecraft:chain"
+      "item": "witcher_rpg:dark_steel_ingot"
     },
     "B": {
-      "tag": "witcher_rpg:silver_ingots"
-    },
-    "D": {
-      "item": "witcher_rpg:dark_steel_ingot"
+      "item": "jewelry:jade"
     }
   },
   "pattern": [
-    " A ",
-    "DDD",
-    "DBD"
+    " B ",
+    "A A",
+    " A "
   ],
   "result": {
-    "item": "additional_rpg_jewelry:cat_school_medallion"
+    "id": "additional_rpg_jewelry:dark_steel_jade_ring"
   }
 }

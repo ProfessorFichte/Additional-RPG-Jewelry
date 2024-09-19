@@ -1,3 +1,6 @@
+2.0.0
+- 1.21.x Release!
+
 1.0.5
 - added recipes and everything for the Air-Magic Jewelry (Air Wizard Release soon)
 - made Witcher Jewelry crafting recipes only active, while the witcher mod is installed

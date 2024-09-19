@@ -2,24 +2,21 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "A": {
-      "item": "minecraft:copper_ingot"
+      "item": "minecraft:prismarine_crystals"
     },
     "B": {
-      "item": "minecraft:string"
+      "item": "jewelry:sapphire"
     },
     "C": {
       "item": "minecraft:netherite_ingot"
-    },
-    "D": {
-      "item": "jewelry:jade"
     }
   },
   "pattern": [
     " B ",
-    "ACA",
-    " D "
+    "A A",
+    " C "
   ],
   "result": {
-    "item": "additional_rpg_jewelry:netherite_sky_necklace"
+    "id": "additional_rpg_jewelry:netherite_ocean_ring"
   }
 }

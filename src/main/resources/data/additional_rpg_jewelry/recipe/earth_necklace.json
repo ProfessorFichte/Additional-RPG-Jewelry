@@ -5,10 +5,10 @@
       "item": "minecraft:string"
     },
     "B": {
-      "item": "minecraft:copper_ingot"
+      "item": "minecraft:iron_ingot"
     },
     "C": {
-      "item": "jewelry:jade"
+      "item": "jewelry:citrine"
     }
   },
   "pattern": [
@@ -17,6 +17,6 @@
     " C "
   ],
   "result": {
-    "item": "additional_rpg_jewelry:sky_necklace"
+    "id": "additional_rpg_jewelry:earth_necklace"
   }
 }

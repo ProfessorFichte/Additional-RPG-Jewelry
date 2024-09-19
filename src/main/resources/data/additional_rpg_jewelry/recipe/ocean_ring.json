@@ -2,21 +2,18 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "A": {
-      "item": "minecraft:string"
-    },
-    "B": {
       "item": "minecraft:prismarine_crystals"
     },
-    "C": {
+    "B": {
       "item": "jewelry:sapphire"
     }
   },
   "pattern": [
-    " A ",
     " B ",
-    " C "
+    "A A",
+    " A "
   ],
   "result": {
-    "item": "additional_rpg_jewelry:ocean_necklace"
+    "id": "additional_rpg_jewelry:ocean_ring"
   }
 }
