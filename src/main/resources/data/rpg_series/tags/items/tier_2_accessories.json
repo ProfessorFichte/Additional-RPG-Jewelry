@@ -4,16 +4,11 @@
     "additional_rpg_jewelry:_earth_necklace",
     "additional_rpg_jewelry:_ocean_ring",
     "additional_rpg_jewelry:_ocean_necklace",
+    "additional_rpg_jewelry:_sky_ring",
+    "additional_rpg_jewelry:_sky_necklace",
     "additional_rpg_jewelry:_rage_ring",
-    "additional_rpg_jewelry:_rage_necklace",
+    "additional_rpg_jewelry:_rage_necklace"
 
-    {
-      "id": "additional_rpg_jewelry:silver_sapphire_ring",
-      "required": false
-    },
-    {
-      "id": "additional_rpg_jewelry:steel_jade_ring",
-      "required": false
-    }
+
   ]
 }

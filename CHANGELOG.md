@@ -1,6 +1,11 @@
+1.0.5
+- added recipes and everything for the Air-Magic Jewelry (Air Wizard Release soon)
+- made Witcher Jewelry crafting recipes only active, while the witcher mod is installed
+- Witcher Jewelry is not loot able, only craft able (can be changed via datapack if you want it to bee loot able)
+
 1.0.4
 - code clean up
-- added optional witcher class mod jewelry
+- added witcher class mod jewelry
 
 1.0.3
 - russian translation thanks to Rem-u
