@@ -1,3 +1,6 @@
+2.0.1
+- fixed a typo in the rpg series tags
+
 2.0.0
 - 1.21.x Release!
 
