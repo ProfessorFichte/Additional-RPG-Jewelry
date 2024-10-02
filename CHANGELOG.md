@@ -1,3 +1,6 @@
+1.0.6
+- fixed a typo in the rpg series tags
+
 1.0.5
 - added recipes and everything for the Air-Magic Jewelry (Air Wizard Release soon)
 - made Witcher Jewelry crafting recipes only active, while the witcher mod is installed
