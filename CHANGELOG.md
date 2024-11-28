@@ -1,3 +1,8 @@
+1.0.7
+- **CONFIG** your config file will get re-set, new config file items_v5 got created
+- make witcher jewelry optional, only gets created if the witcher mod is loaded
+- added combat roll attributes to the cat school medallion and the dark steel ring
+
 1.0.6
 - fixed a typo in the rpg series tags
 
