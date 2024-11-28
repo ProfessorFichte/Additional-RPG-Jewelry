@@ -52,7 +52,7 @@ public class Items {
         entryMap.put(id.toString(), entry.item());
         return entry;
     }
-
+    public static final String COMBATROLL_RECHARGE = "combatroll:recharge";
     private static final float tier_1_multiplier = 0.04F;
     private static final ItemConfig.Bonus tier_1_bonus = new ItemConfig.Bonus(tier_1_multiplier, EntityAttributeModifier.Operation.MULTIPLY_BASE);
     private static final float tier_2_multiplier = 0.08F;
@@ -274,7 +274,8 @@ public class Items {
            add(new Identifier(AdditionalJewelry.MOD_ID, "dark_steel_jade_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
                     List.of(new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:adrenaline_modifier")), 0.14F , EntityAttributeModifier.Operation.MULTIPLY_BASE),
                             new ItemConfig.AttributeModifier("generic.attack_damage", 0.05F, EntityAttributeModifier.Operation.MULTIPLY_BASE),
-                            new ItemConfig.AttributeModifier("combat_roll:recharge", 0.05F, EntityAttributeModifier.Operation.MULTIPLY_BASE)
+                            new ItemConfig.AttributeModifier(COMBATROLL_RECHARGE, 0.025F, EntityAttributeModifier.Operation.MULTIPLY_BASE)
+
                     )));
 
             //NECKLACES
@@ -291,7 +292,8 @@ public class Items {
                             new ItemConfig.AttributeModifier("generic.attack_speed", 0.06F, EntityAttributeModifier.Operation.MULTIPLY_BASE),
                             new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:adrenaline_modifier")), 0.2F , EntityAttributeModifier.Operation.MULTIPLY_BASE),
                             new ItemConfig.AttributeModifier("generic.attack_damage", tier_3_physical_multiplier, EntityAttributeModifier.Operation.MULTIPLY_BASE),
-                            new ItemConfig.AttributeModifier("combat_roll:recharge", 0.1F, EntityAttributeModifier.Operation.MULTIPLY_BASE)
+                            new ItemConfig.AttributeModifier(COMBATROLL_RECHARGE, 0.50F, EntityAttributeModifier.Operation.MULTIPLY_BASE)
+
                     )));
            add(new Identifier(AdditionalJewelry.MOD_ID, "griffin_school_medallion"),  Rarity.RARE, true ,new ItemConfig.Item(
                     List.of(new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:sign_intensity")), tier_3_spell_multiplier , EntityAttributeModifier.Operation.MULTIPLY_BASE),
