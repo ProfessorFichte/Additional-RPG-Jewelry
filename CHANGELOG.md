@@ -1,3 +1,7 @@
+1.0.8 - 1.20.1
+- combat roll recharge was 50% instead of 5%
+- **CONFIG** your config file will get re-set, new config file items_v6 got created
+
 1.0.7
 - **CONFIG** your config file will get re-set, new config file items_v5 got created
 - make witcher jewelry optional, only gets created if the witcher mod is loaded

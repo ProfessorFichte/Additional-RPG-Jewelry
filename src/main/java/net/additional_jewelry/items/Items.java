@@ -292,7 +292,7 @@ public class Items {
                             new ItemConfig.AttributeModifier("generic.attack_speed", 0.06F, EntityAttributeModifier.Operation.MULTIPLY_BASE),
                             new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:adrenaline_modifier")), 0.2F , EntityAttributeModifier.Operation.MULTIPLY_BASE),
                             new ItemConfig.AttributeModifier("generic.attack_damage", tier_3_physical_multiplier, EntityAttributeModifier.Operation.MULTIPLY_BASE),
-                            new ItemConfig.AttributeModifier(COMBATROLL_RECHARGE, 0.50F, EntityAttributeModifier.Operation.MULTIPLY_BASE)
+                            new ItemConfig.AttributeModifier(COMBATROLL_RECHARGE, 0.050F, EntityAttributeModifier.Operation.MULTIPLY_BASE)
 
                     )));
            add(new Identifier(AdditionalJewelry.MOD_ID, "griffin_school_medallion"),  Rarity.RARE, true ,new ItemConfig.Item(
