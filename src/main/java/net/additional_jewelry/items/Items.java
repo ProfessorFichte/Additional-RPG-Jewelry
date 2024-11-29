@@ -2,6 +2,7 @@ package net.additional_jewelry.items;
 
 import net.additional_jewelry.AdditionalJewelry;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.fabricmc.loader.api.FabricLoader;
 import net.jewelry.api.JewelryItem;
 import net.jewelry.config.ItemConfig;
 import net.minecraft.component.type.AttributeModifierSlot;
@@ -103,6 +104,13 @@ public class Items {
         return entry;
     }
 
+    public static final String COMBATROLL_RECHARGE = "combatroll:recharge";
+    public static final String DAMAGE_REFLECT = "more_rpg_classes:damage_reflect_modifier";
+    public static final String RAGE = "more_rpg_classes:rage_modifier";
+    public static final String LIFESTEAL = "more_rpg_classes:lifesteal_modifier";
+
+
+
     private static final float tier_1_multiplier = 0.04F;
     private static final ItemConfig.Bonus tier_1_bonus = new ItemConfig.Bonus(tier_1_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE);
     private static final float tier_2_multiplier = 0.08F;
@@ -117,16 +125,12 @@ public class Items {
     public static Entry driptstone_necklace = add(Identifier.of(MOD_ID, "dripstone_necklace"), new ItemConfig.Item(
             List.of(
                     new ItemConfig.AttributeModifier(GENERIC_MAX_HEALTH, 2, EntityAttributeModifier.Operation.ADD_VALUE),
-                    new ItemConfig.AttributeModifier(Objects.requireNonNull(
-                            Identifier.tryParse("more_rpg_classes:damage_reflect_modifier")),
-                            0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE))
+                    new ItemConfig.AttributeModifier(DAMAGE_REFLECT, 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE))
     ));
     public static Entry cactea_ring = add(Identifier.of(MOD_ID, "cactea_ring"), new ItemConfig.Item(
             List.of(
                     new ItemConfig.AttributeModifier(GENERIC_MAX_HEALTH, 2, EntityAttributeModifier.Operation.ADD_VALUE),
-                    new ItemConfig.AttributeModifier(Objects.requireNonNull(
-                            Identifier.tryParse("more_rpg_classes:damage_reflect_modifier")),
-                            0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE))
+                    new ItemConfig.AttributeModifier(DAMAGE_REFLECT, 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE))
     ));
 
     //UNCOMMON
@@ -147,9 +151,7 @@ public class Items {
     ));
     public static Entry rage_ring = add(Identifier.of(MOD_ID, "rage_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
             List.of(
-                    new ItemConfig.AttributeModifier(Objects.requireNonNull(
-                            Identifier.tryParse("more_rpg_classes:rage_modifier")),
-                            0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    new ItemConfig.AttributeModifier(RAGE, 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     ));
 
@@ -170,9 +172,7 @@ public class Items {
     ));
     public static Entry rage_necklace = add(Identifier.of(MOD_ID, "rage_necklace"), Rarity.UNCOMMON, new ItemConfig.Item(
             List.of(
-                    new ItemConfig.AttributeModifier(Objects.requireNonNull(
-                            Identifier.tryParse("more_rpg_classes:rage_modifier")),
-                            0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    new ItemConfig.AttributeModifier(RAGE, 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     ));
 
@@ -195,9 +195,7 @@ public class Items {
     public static Entry netherite_rage_ring = add(Identifier.of(MOD_ID, "netherite_rage_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
             List.of(
                     new ItemConfig.AttributeModifier("generic.attack_damage", 0.05F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier(Objects.requireNonNull(
-                            Identifier.tryParse("more_rpg_classes:rage_modifier")),
-                            0.15F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    new ItemConfig.AttributeModifier(RAGE, 0.15F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     ));
 
@@ -219,9 +217,7 @@ public class Items {
     public static Entry netherite_rage_necklace = add(Identifier.of(MOD_ID, "netherite_rage_necklace"), Rarity.UNCOMMON, new ItemConfig.Item(
             List.of(
                     new ItemConfig.AttributeModifier("generic.attack_damage", 0.05F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier(Objects.requireNonNull(
-                            Identifier.tryParse("more_rpg_classes:rage_modifier")),
-                            0.15F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    new ItemConfig.AttributeModifier(RAGE, 0.15F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     ),true);
 
@@ -272,90 +268,93 @@ public class Items {
     public static Entry unique_rage_ring = add(Identifier.of(MOD_ID, "unique_rage_ring"), Rarity.RARE, true, new ItemConfig.Item(
             List.of(
                     new ItemConfig.AttributeModifier("generic.attack_damage", 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier(Objects.requireNonNull(
-                            Identifier.tryParse("more_rpg_classes:rage_modifier")),
-                            0.2F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    new ItemConfig.AttributeModifier(RAGE, 0.2F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     ),true);
     public static Entry unique_rage_necklace = add(Identifier.of(MOD_ID, "unique_rage_necklace"), Rarity.RARE, true, new ItemConfig.Item(
             List.of(
                     new ItemConfig.AttributeModifier("generic.attack_damage", 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier(Objects.requireNonNull(
-                            Identifier.tryParse("more_rpg_classes:rage_modifier")),
-                            0.2F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    new ItemConfig.AttributeModifier(RAGE, 0.2F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     ),true);
     public static Entry vampire_ring = add(Identifier.of(MOD_ID, "vampire_ring"), Rarity.RARE, true, new ItemConfig.Item(
             List.of(
                     new ItemConfig.AttributeModifier(GENERIC_ATTACK_DAMAGE, 0.08F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier(Objects.requireNonNull(
-                            Identifier.tryParse("more_rpg_classes:lifesteal_modifier")),
-                            lifesteal_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    new ItemConfig.AttributeModifier(LIFESTEAL, lifesteal_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     ),true);
     public static Entry vampire_necklace = add(Identifier.of(MOD_ID, "vampire_necklace"), Rarity.RARE, true, new ItemConfig.Item(
             List.of(
                     new ItemConfig.AttributeModifier(GENERIC_ATTACK_DAMAGE, 0.08F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier(Objects.requireNonNull(
-                            Identifier.tryParse("more_rpg_classes:lifesteal_modifier")),
-                            lifesteal_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    new ItemConfig.AttributeModifier(LIFESTEAL, lifesteal_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     ),true);
 
-    //WITCHER-RELATED STUFF
-    //RINGS
-    public static Entry silver_sapphire_ring = add(Identifier.of(MOD_ID, "silver_sapphire_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
-            List.of(
-                    new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:adrenaline_modifier")), tier_1_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:sign_intensity")), tier_1_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE))));
-
-    public static Entry meteorite_silver_sapphire_ring = add(Identifier.of(MOD_ID, "meteorite_silver_sapphire_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
-            List.of(new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:adrenaline_modifier")), 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:sign_intensity")),
-                            tier_2_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE))),true);
-
-    public static Entry steel_jade_ring = add(Identifier.of(MOD_ID, "steel_jade_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
-            List.of(
-                    new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:adrenaline_modifier")), 0.08F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier("generic.attack_damage", tier_1_multiplier / 2, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
-            )));
-
-    public static Entry dark_steel_jade_ring = add(Identifier.of(MOD_ID, "dark_steel_jade_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
-            List.of(new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:adrenaline_modifier")), 0.14F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier("generic.attack_damage", 0.05F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
-            )),true);
-
-    //NECKLACES
-    public static Entry bear_school_medallion = add(Identifier.of(MOD_ID, "bear_school_medallion"), Rarity.RARE, true, new ItemConfig.Item(
-            List.of(
-                    new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:quen_intensity")), 2, EntityAttributeModifier.Operation.ADD_VALUE),
-                    new ItemConfig.AttributeModifier(GENERIC_MAX_HEALTH, 6.0F, EntityAttributeModifier.Operation.ADD_VALUE),
-                    new ItemConfig.AttributeModifier("generic.attack_damage", tier_3_physical_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:adrenaline_modifier")), 0.2F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
-            )),true);
-    public static Entry cat_school_medallion = add(Identifier.of(MOD_ID, "cat_school_medallion"), Rarity.RARE, true, new ItemConfig.Item(
-            List.of(
-                    new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:aard_intensity")), 2, EntityAttributeModifier.Operation.ADD_VALUE),
-                    new ItemConfig.AttributeModifier("generic.attack_speed", 0.06F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:adrenaline_modifier")), 0.2F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier("generic.attack_damage", tier_3_physical_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
-            )),true);
-    public static Entry griffin_school_medallion = add(Identifier.of(MOD_ID, "griffin_school_medallion"), Rarity.RARE, true, new ItemConfig.Item(
-            List.of(new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:sign_intensity")), tier_3_spell_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:adrenaline_modifier")), 0.12F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier(SpellPowerMechanics.CRITICAL_DAMAGE.id, tier_3_secondary_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier(SpellPowerMechanics.HASTE.id, tier_3_secondary_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
-            )),true);
-    public static Entry wolf_school_medallion = add(Identifier.of(MOD_ID, "wolf_school_medallion"), Rarity.RARE, true, new ItemConfig.Item(
-            List.of(
-                    new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:sign_intensity")), tier_3_spell_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier(Objects.requireNonNull(Identifier.tryParse("witcher_rpg:adrenaline_modifier")), 0.15F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier("generic.attack_speed", 0.06F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier("generic.attack_damage", tier_3_physical_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
-            )),true);
-
     private static final Identifier modifierId = Identifier.of(MOD_ID, "equipment_bonus");
         public static void register (ItemConfig allConfigs){
+            final String ADRENALINE = "witcher_rpg:adrenaline_modifier";
+            final String SIGN_INTENSITY = "witcher_rpg:sign_intensity";
+            final String QUEN_INTENSITY = "witcher_rpg:quen_intensity";
+            final String AARD_INTENSITY = "witcher_rpg:aard_intensity";
+
+            if(FabricLoader.getInstance().isModLoaded("witcher_rpg")){
+                //WITCHER-RELATED STUFF
+                //RINGS
+                add(Identifier.of(AdditionalJewelry.MOD_ID,"silver_sapphire_ring"),Rarity.UNCOMMON, new ItemConfig.Item(
+                        List.of(
+                                new ItemConfig.AttributeModifier(ADRENALINE, tier_1_multiplier  ,EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                new ItemConfig.AttributeModifier(SIGN_INTENSITY, tier_1_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE))));
+
+                add(Identifier.of(AdditionalJewelry.MOD_ID, "meteorite_silver_sapphire_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
+                        List.of(new ItemConfig.AttributeModifier(ADRENALINE, 0.1F , EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                new ItemConfig.AttributeModifier(SIGN_INTENSITY,
+                                        tier_2_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE))));
+
+                add(Identifier.of(AdditionalJewelry.MOD_ID,"steel_jade_ring"),Rarity.UNCOMMON, new ItemConfig.Item(
+                        List.of(
+                                new ItemConfig.AttributeModifier(ADRENALINE, 0.08F , EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                new ItemConfig.AttributeModifier("generic.attack_damage", tier_1_multiplier/2, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                        )));
+
+                add(Identifier.of(AdditionalJewelry.MOD_ID, "dark_steel_jade_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
+                        List.of(new ItemConfig.AttributeModifier(ADRENALINE, 0.14F , EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                new ItemConfig.AttributeModifier("generic.attack_damage", 0.05F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                new ItemConfig.AttributeModifier(COMBATROLL_RECHARGE, 0.025F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+
+                        )));
+
+                //NECKLACES
+                add(Identifier.of(AdditionalJewelry.MOD_ID, "bear_school_medallion"), Rarity.RARE, true ,new ItemConfig.Item(
+                        List.of(
+                                new ItemConfig.AttributeModifier(QUEN_INTENSITY, 2 , EntityAttributeModifier.Operation.ADD_VALUE),
+                                new ItemConfig.AttributeModifier(GENERIC_MAX_HEALTH, 6.0F, EntityAttributeModifier.Operation.ADD_VALUE),
+                                new ItemConfig.AttributeModifier("generic.attack_damage", tier_3_physical_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                new ItemConfig.AttributeModifier(ADRENALINE, 0.2F , EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                        )),true);
+                add(Identifier.of(AdditionalJewelry.MOD_ID, "cat_school_medallion"), Rarity.RARE, true ,new ItemConfig.Item(
+                        List.of(
+                                new ItemConfig.AttributeModifier(AARD_INTENSITY, 2 , EntityAttributeModifier.Operation.ADD_VALUE),
+                                new ItemConfig.AttributeModifier("generic.attack_speed", 0.06F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                new ItemConfig.AttributeModifier(ADRENALINE, 0.2F , EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                new ItemConfig.AttributeModifier("generic.attack_damage", tier_3_physical_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                new ItemConfig.AttributeModifier(COMBATROLL_RECHARGE, 0.05F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+
+                        )),true);
+                add(Identifier.of(AdditionalJewelry.MOD_ID, "griffin_school_medallion"),  Rarity.RARE, true ,new ItemConfig.Item(
+                        List.of(new ItemConfig.AttributeModifier(SIGN_INTENSITY, tier_3_spell_multiplier , EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                new ItemConfig.AttributeModifier(ADRENALINE, 0.12F , EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                new ItemConfig.AttributeModifier(SpellPowerMechanics.CRITICAL_DAMAGE.id, tier_3_secondary_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                new ItemConfig.AttributeModifier(SpellPowerMechanics.HASTE.id, tier_3_secondary_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                        )),true);
+                add(Identifier.of(AdditionalJewelry.MOD_ID, "wolf_school_medallion"),  Rarity.RARE, true ,new ItemConfig.Item(
+                        List.of(
+                                new ItemConfig.AttributeModifier(SIGN_INTENSITY, tier_3_spell_multiplier , EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                new ItemConfig.AttributeModifier(ADRENALINE, 0.15F , EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                new ItemConfig.AttributeModifier("generic.attack_speed", 0.06F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                new ItemConfig.AttributeModifier("generic.attack_damage", tier_3_physical_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                        )),true);
+            }
+
             for (var entry : all) {
                 ItemConfig.Item itemConfig = allConfigs.items.get(entry.id.toString());
                 if (itemConfig == null) {
