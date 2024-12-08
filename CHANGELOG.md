@@ -1,3 +1,7 @@
+2.0.3 - 1.21.1
+- fixed mipmap texture issue #5
+- redesigned some witcher medallion assets
+
 2.0.2
 - **CONFIG** your config file will get re-set, new config file items_v5 got created
 - make witcher jewelry optional, only gets created if the witcher mod is loaded
