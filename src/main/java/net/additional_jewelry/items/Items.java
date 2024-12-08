@@ -252,8 +252,8 @@ public class Items {
             )
     ));
     public static void register(ItemConfig allConfigs) {
+        //WITCHER-RELATED STUFF
         if(FabricLoader.getInstance().isModLoaded("witcher_rpg")){
-            //WITCHER-RELATED STUFF
             //RINGS
             add(new Identifier(AdditionalJewelry.MOD_ID,"silver_sapphire_ring"),Rarity.UNCOMMON, new ItemConfig.Item(
                     List.of(

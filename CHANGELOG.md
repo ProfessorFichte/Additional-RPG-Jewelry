@@ -1,3 +1,7 @@
+1.0.9 - 1.20.1
+- fixed mipmap texture issue #5
+- redesigned some witcher medallion assets
+
 1.0.8 - 1.20.1
 - combat roll recharge was 50% instead of 5%
 - **CONFIG** your config file will get re-set, new config file items_v6 got created
