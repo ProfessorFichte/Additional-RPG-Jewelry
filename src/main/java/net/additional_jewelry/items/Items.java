@@ -297,8 +297,8 @@ public class Items {
             final String QUEN_INTENSITY = "witcher_rpg:quen_intensity";
             final String AARD_INTENSITY = "witcher_rpg:aard_intensity";
 
+            //WITCHER-RELATED STUFF
             if(FabricLoader.getInstance().isModLoaded("witcher_rpg")){
-                //WITCHER-RELATED STUFF
                 //RINGS
                 add(Identifier.of(AdditionalJewelry.MOD_ID,"silver_sapphire_ring"),Rarity.UNCOMMON, new ItemConfig.Item(
                         List.of(
