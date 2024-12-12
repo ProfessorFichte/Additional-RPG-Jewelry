@@ -1,3 +1,7 @@
+2.0.4 - 1.21.1
+- Fixed Combatroll Mod Typo - Cat School Jewelry
+- **CONFIG** your config file will get re-set, new config file items_v6 got created
+
 2.0.3 - 1.21.1
 - fixed mipmap texture issue #5
 - redesigned some witcher medallion assets

@@ -20,7 +20,7 @@ public class AdditionalJewelry implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("additional_rpg_jewelry");
 
 	public static ConfigManager<ItemConfig> itemConfig = new ConfigManager<>
-			("items_v5", Default.items)
+			("items_v6", Default.items)
 			.builder()
 			.setDirectory(MOD_ID)
 			.sanitize(true)

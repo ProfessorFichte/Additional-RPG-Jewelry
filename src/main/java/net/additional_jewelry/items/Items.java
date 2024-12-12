@@ -104,7 +104,7 @@ public class Items {
         return entry;
     }
 
-    public static final String COMBATROLL_RECHARGE = "combatroll:recharge";
+    public static final String COMBATROLL_RECHARGE = "combat_roll:recharge";
     public static final String DAMAGE_REFLECT = "more_rpg_classes:damage_reflect_modifier";
     public static final String RAGE = "more_rpg_classes:rage_modifier";
     public static final String LIFESTEAL = "more_rpg_classes:lifesteal_modifier";
