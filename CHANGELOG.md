@@ -1,3 +1,6 @@
+2.0.5 - 1.21.1
+- Changed Translation for Aether Related Jewelry
+
 2.0.4 - 1.21.1
 - Fixed Combatroll Mod Typo - Cat School Jewelry
 - **CONFIG** your config file will get re-set, new config file items_v6 got created
@@ -16,8 +19,3 @@
 
 2.0.0
 - 1.21.x Release!
-
-1.0.5
-- added recipes and everything for the Air-Magic Jewelry (Air Wizard Release soon)
-- made Witcher Jewelry crafting recipes only active, while the witcher mod is installed
-- Witcher Jewelry is not loot able, only craft able (can be changed via datapack if you want it to bee loot able)
