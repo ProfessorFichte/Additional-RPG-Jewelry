@@ -1,5 +1,6 @@
 2.0.5 - 1.21.1
 - Changed Translation for Aether Related Jewelry
+- Update Loot Tags
 
 2.0.4 - 1.21.1
 - Fixed Combatroll Mod Typo - Cat School Jewelry
