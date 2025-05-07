@@ -1,0 +1,63 @@
+{
+  "modmenu.descriptionTranslation.additional_rpg_jewelry": "Add-On para el mod de Jewerly, agregando joyas para the More RPG Classes Series.",
+  "modmenu.summaryTranslation.additional_rpg_jewelry": "Add-On para el mod de Jewerly, agregando joyas para the More RPG Classes Series.",
+  "itemGroup.additional_rpg_jewelry.general": "Additional RPG Jewelry",
+
+  "item.additional_rpg_jewelry.cactea_ring": "Anillo de Cactus",
+  "item.additional_rpg_jewelry.dripstone_necklace": "Collar de Dripstone",
+
+  "item.additional_rpg_jewelry.sky_ring": "Anillo Celeste",
+  "item.additional_rpg_jewelry.netherite_sky_ring": "Anillo Celeste de Netherite",
+  "item.additional_rpg_jewelry.sky_necklace": "Collar Celeste",
+  "item.additional_rpg_jewelry.netherite_sky_necklace": "Collar Celeste de Netherite",
+  "item.additional_rpg_jewelry.earth_ring": "Anillo Montañoso",
+  "item.additional_rpg_jewelry.netherite_earth_ring": "Anillo Montañoso de Netherite",
+  "item.additional_rpg_jewelry.earth_necklace": "Collar Montañoso",
+  "item.additional_rpg_jewelry.netherite_earth_necklace": "Collar Montañoso de Netherite",
+  "item.additional_rpg_jewelry.ocean_ring": "Anillo Oceánico",
+  "item.additional_rpg_jewelry.netherite_ocean_ring": "Anillo Oceánico de Netherite",
+  "item.additional_rpg_jewelry.ocean_necklace": "Collar Oceánico",
+  "item.additional_rpg_jewelry.netherite_ocean_necklace": "Collar Oceánico de Netherite",
+  "item.additional_rpg_jewelry.rage_ring": "Anillo Rúnico Vikingo",
+  "item.additional_rpg_jewelry.netherite_rage_ring": "Anillo Rúnico Vikingo de Netherite",
+  "item.additional_rpg_jewelry.rage_necklace": "Collar Rúnico Vikingo",
+  "item.additional_rpg_jewelry.netherite_rage_necklace": "Collar Rúnico Vikingo de Netherite",
+
+  "item.additional_rpg_jewelry.bear_school_medallion": "Medallón de la Escuela del Oso",
+  "item.additional_rpg_jewelry.bear_school_medallion.lore": "Creado en Haern Caduch por Arnaghad.",
+  "item.additional_rpg_jewelry.cat_school_medallion": "Medallón de la Escuela del Gato",
+  "item.additional_rpg_jewelry.cat_school_medallion.lore": "Creado en la Ciudadela de Stygga por Gezras.",
+  "item.additional_rpg_jewelry.griffin_school_medallion": "Medallón de la Escuela del Grifo",
+  "item.additional_rpg_jewelry.griffin_school_medallion.lore": "Creado en Kaer Seren por Erland de Larvik.",
+  "item.additional_rpg_jewelry.wolf_school_medallion": "Medallón de la Escuela del Lobo",
+  "item.additional_rpg_jewelry.wolf_school_medallion.lore": "Creado en Kaer Morhen por Vesemir.",
+  "item.additional_rpg_jewelry.silver_sapphire_ring": "Anillo de Plata y Zafiro",
+  "item.additional_rpg_jewelry.steel_jade_ring": "Anillo de Acero y Jade",
+  "item.additional_rpg_jewelry.meteorite_silver_sapphire_ring": "Anillo Meteórico de Plata y Zafiro",
+  "item.additional_rpg_jewelry.dark_steel_jade_ring": "Anillo de Acero Oscuro y Jade",
+
+  "item.additional_rpg_jewelry.unique_rage_ring": "ᛈᛦᛋ",
+  "item.additional_rpg_jewelry.unique_rage_ring.lore": "Este anillo tiene un aura intimidante. ¿Quién podría leer esas runas?",
+  "item.additional_rpg_jewelry.unique_rage_necklace": "Colgante de Svablod",
+  "item.additional_rpg_jewelry.unique_rage_necklace.lore": "Le dio a sus fieles un solo mandamiento: Matar.",
+
+  "item.additional_rpg_jewelry.unique_earth_ring": "Anillo de Obsidiana Profunda",
+  "item.additional_rpg_jewelry.unique_earth_ring.lore": "Forjado en lo más profundo de las cuevas, ¿tal vez por enanos?",
+  "item.additional_rpg_jewelry.unique_earth_necklace": "Flor de Obsidiana",
+  "item.additional_rpg_jewelry.unique_earth_necklace.lore": "Es tan pesado... casi demasiado.",
+
+  "item.additional_rpg_jewelry.unique_ocean_ring": "Ojo del Anciano Guardián",
+  "item.additional_rpg_jewelry.unique_ocean_ring.lore": "¿Todavía... parpadea?",
+  "item.additional_rpg_jewelry.unique_ocean_necklace": "Amuleto Perdido de la Atlántida",
+  "item.additional_rpg_jewelry.unique_ocean_necklace.lore": "Un antiguo relicto de una civilización olvidada.",
+
+  "item.additional_rpg_jewelry.unique_sky_ring": "Anillo de Ámbar del Aether",
+  "item.additional_rpg_jewelry.unique_sky_ring.lore": "Creado a partir de un árbol sagrado del Aether.",
+  "item.additional_rpg_jewelry.unique_sky_necklace": "Colgante de Zanita del Aether",
+  "item.additional_rpg_jewelry.unique_sky_necklace.lore": "Forjado por valquirias en la dimensión del Aether.",
+
+  "item.additional_rpg_jewelry.vampire_ring": "Anillo de Regis",
+  "item.additional_rpg_jewelry.vampire_ring.lore": "Necesito... algo de sangre.",
+  "item.additional_rpg_jewelry.vampire_necklace": "Cadena de Gharasham",
+  "item.additional_rpg_jewelry.vampire_necklace.lore": "¿Nac thi sel me thaur?"
+}
