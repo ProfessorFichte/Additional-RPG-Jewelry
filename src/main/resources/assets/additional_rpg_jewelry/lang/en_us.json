@@ -1,5 +1,5 @@
 {
-  "itemGroup.additional_rpg_jewelry.general": "Additional RPG Jewelry",
+  "itemGroup.additional_rpg_jewelry.general": "Additional Jewelry",
 
   "item.additional_rpg_jewelry.cactea_ring": "Cactus Ring",
   "item.additional_rpg_jewelry.dripstone_necklace": "Dripstone Necklace",
@@ -44,15 +44,15 @@
   "item.additional_rpg_jewelry.unique_earth_necklace": "Obsidian Flower",
   "item.additional_rpg_jewelry.unique_earth_necklace.lore": "Its so heavy, almost too heavy.",
 
-  "item.additional_rpg_jewelry.unique_ocean_ring": "Elder Guardians Eye",
-  "item.additional_rpg_jewelry.unique_ocean_ring.lore": "It still... blinks?",
+  "item.additional_rpg_jewelry.unique_ocean_ring": "Poseidon's Ring",
+  "item.additional_rpg_jewelry.unique_ocean_ring.lore": "Powerful Ring that controls the tides.",
   "item.additional_rpg_jewelry.unique_ocean_necklace": "Lost Amulet of Atlantis",
   "item.additional_rpg_jewelry.unique_ocean_necklace.lore": "A lost relict from a forgotten civilisation.",
 
-  "item.additional_rpg_jewelry.unique_sky_ring": "Amber Aether Ring",
-  "item.additional_rpg_jewelry.unique_sky_ring.lore": "Created from a holy tree in a yet unknown world",
+  "item.additional_rpg_jewelry.unique_sky_ring": "Zanite Aether Ring",
+  "item.additional_rpg_jewelry.unique_sky_ring.lore": "Highly valuable jewelry in the aether.",
   "item.additional_rpg_jewelry.unique_sky_necklace": "Zanite Aether Pendant",
-  "item.additional_rpg_jewelry.unique_sky_necklace.lore": "Forged by Valkyries in a yet unknown world.",
+  "item.additional_rpg_jewelry.unique_sky_necklace.lore": "Forged by Valkyries in the aether dimension.",
 
   "item.additional_rpg_jewelry.vampire_ring": "Ring of Regis",
   "item.additional_rpg_jewelry.vampire_ring.lore": "I need some blood...",

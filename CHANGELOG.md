@@ -1,3 +1,6 @@
+1.1.0 - 1.20.1
+- Visual Enhancement Update!
+
 1.0.9 - 1.20.1
 - fixed mipmap texture issue #5
 - redesigned some witcher medallion assets

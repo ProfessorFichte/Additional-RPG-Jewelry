@@ -2,7 +2,7 @@
 	"schemaVersion": 1,
 	"id": "additional_rpg_jewelry",
 	"version": "${version}",
-	"name": "Additional RPG Jewelry",
+	"name": "Additional Jewelry",
 	"description": "Add-On for the Jewelry Mod, adding jewelry for the More RPG Classes Series.",
 	"authors": [
 		"Fichte"

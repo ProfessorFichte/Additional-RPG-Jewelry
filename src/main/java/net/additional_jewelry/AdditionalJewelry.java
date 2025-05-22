@@ -20,7 +20,7 @@ public class AdditionalJewelry implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("additional_rpg_jewelry");
 
 	public static ConfigManager<ItemConfig> itemConfig = new ConfigManager<>
-			("items_v6", Default.items)
+			("items_v7", Default.items)
 			.builder()
 			.setDirectory(MOD_ID)
 			.sanitize(true)
@@ -29,7 +29,7 @@ public class AdditionalJewelry implements ModInitializer {
 
 	private void registerItemGroup() {
 		Group.ADDITIONAL_JEWELRY = FabricItemGroup.builder()
-				.icon(() -> new ItemStack(Items.unique_ocean_necklace.item()))
+				.icon(() -> new ItemStack(Items.sky_ring.item()))
 				.displayName(Text.translatable("itemGroup." + MOD_ID + ".general"))
 				.build();
 		Registry.register(Registries.ITEM_GROUP, Group.ADDITIONAL_JEWELRY_KEY, Group.ADDITIONAL_JEWELRY);
