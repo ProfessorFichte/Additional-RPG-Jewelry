@@ -16,6 +16,9 @@
 	"entrypoints": {
 		"main": [
           "net.additional_jewelry.AdditionalJewelry"
+		],
+		"fabric-datagen": [
+			"net.additional_jewelry.datagen.AdditionalJewelryDataGen"
 		]
 	},
 	"mixins": [

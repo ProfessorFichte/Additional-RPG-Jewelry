@@ -8,9 +8,21 @@
     "additional_rpg_jewelry:netherite_sky_necklace",
     "additional_rpg_jewelry:netherite_rage_ring",
     "additional_rpg_jewelry:netherite_rage_necklace",
-    "additional_rpg_jewelry:vampire_ring",
-    "additional_rpg_jewelry:vampire_necklace"
-
-
+    {
+      "id": "additional_rpg_jewelry:meteorite_silver_sapphire_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:dark_steel_jade_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:meteorite_silver_sapphire_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:dark_steel_jade_necklace",
+      "required": false
+    }
   ]
 }

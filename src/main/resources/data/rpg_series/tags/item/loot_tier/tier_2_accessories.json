@@ -7,8 +7,22 @@
     "additional_rpg_jewelry:sky_ring",
     "additional_rpg_jewelry:sky_necklace",
     "additional_rpg_jewelry:rage_ring",
-    "additional_rpg_jewelry:rage_necklace"
-
-
+    "additional_rpg_jewelry:rage_necklace",
+    {
+      "id": "additional_rpg_jewelry:silver_sapphire_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:steel_jade_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:silver_sapphire_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:steel_jade_necklace",
+      "required": false
+    }
   ]
 }

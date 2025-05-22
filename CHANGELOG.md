@@ -1,3 +1,13 @@
+2.1.0 - 1.21.1
+- Visual Enhancement Update!
+- update some lore description and item names of Unique Jewelry
+- add new Spell Vampire jewelry
+- Buffed Vampire Lifesteal melee jewelry
+- Witcher Medallions got removed, they will be reintroduced in the Witcher Mod with new functions
+- Added Steel, Dark Steel, Silver & Meteorite Silver Necklace Variants
+- Added a Unique Witcher Ring & Necklace
+- Add dismantle Recipes for lower tier jewelry
+
 2.0.5 - 1.21.1
 - Changed Translation for Aether Related Jewelry
 - Update Loot Tags

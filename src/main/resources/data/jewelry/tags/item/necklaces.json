@@ -16,19 +16,27 @@
     "additional_rpg_jewelry:unique_sky_necklace",
 
     {
-      "id": "additional_rpg_jewelry:bear_school_medallion",
+      "id": "additional_rpg_jewelry:silver_sapphire_necklace",
       "required": false
     },
     {
-      "id": "additional_rpg_jewelry:cat_school_medallion",
+      "id": "additional_rpg_jewelry:steel_jade_necklace",
       "required": false
     },
     {
-      "id": "additional_rpg_jewelry:griffin_school_medallion",
+      "id": "additional_rpg_jewelry:meteorite_silver_sapphire_necklace",
       "required": false
     },
     {
-      "id": "additional_rpg_jewelry:wolf_school_medallion",
+      "id": "additional_rpg_jewelry:dark_steel_jade_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_witcher_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:spell_vampire_necklace",
       "required": false
     }
   ]

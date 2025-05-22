@@ -7,6 +7,18 @@
     "additional_rpg_jewelry:unique_rage_ring",
     "additional_rpg_jewelry:unique_rage_necklace",
     "additional_rpg_jewelry:unique_sky_ring",
-    "additional_rpg_jewelry:unique_sky_necklace"
+    "additional_rpg_jewelry:unique_sky_necklace",
+    "additional_rpg_jewelry:vampire_ring",
+    "additional_rpg_jewelry:vampire_necklace",
+    "additional_rpg_jewelry:spell_vampire_ring",
+    "additional_rpg_jewelry:spell_vampire_necklace",
+    {
+      "id": "additional_rpg_jewelry:unique_witcher_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_witcher_necklace",
+      "required": false
+    }
   ]
 }

@@ -1,7 +1,7 @@
 package net.additional_jewelry;
 
 import net.additional_jewelry.items.Group;
-import net.additional_jewelry.items.Items;
+import net.additional_jewelry.items.AdditionalJewelryItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.additional_jewelry.config.Default;
@@ -20,7 +20,7 @@ public class AdditionalJewelry implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("additional_rpg_jewelry");
 
 	public static ConfigManager<ItemConfig> itemConfig = new ConfigManager<>
-			("items_v6", Default.items)
+			("items_v7", Default.items)
 			.builder()
 			.setDirectory(MOD_ID)
 			.sanitize(true)
@@ -29,7 +29,7 @@ public class AdditionalJewelry implements ModInitializer {
 
 	private void registerItemGroup() {
 		Group.ADDITIONAL_JEWELRY = FabricItemGroup.builder()
-				.icon(() -> new ItemStack(Items.unique_ocean_necklace.item()))
+				.icon(() -> new ItemStack(AdditionalJewelryItems.sky_ring.item()))
 				.displayName(Text.translatable("itemGroup." + MOD_ID + ".general"))
 				.build();
 		Registry.register(Registries.ITEM_GROUP, Group.ADDITIONAL_JEWELRY_KEY, Group.ADDITIONAL_JEWELRY);
@@ -38,7 +38,7 @@ public class AdditionalJewelry implements ModInitializer {
 	public void onInitialize() {
 		itemConfig.refresh();
 		registerItemGroup();
-		Items.register(itemConfig.value);
+		AdditionalJewelryItems.register(itemConfig.value);
 		itemConfig.save();
 	}
 }
