@@ -100,7 +100,7 @@ public class Items {
             List.of(
                     new ItemConfig.AttributeModifier(Objects.requireNonNull(
                             Identifier.tryParse("more_rpg_classes:rage_modifier")),
-                            0.1F, EntityAttributeModifier.Operation.MULTIPLY_BASE)
+                            tier_1_multiplier, EntityAttributeModifier.Operation.MULTIPLY_BASE)
             )
     ));
 
@@ -123,7 +123,7 @@ public class Items {
             List.of(
                     new ItemConfig.AttributeModifier(Objects.requireNonNull(
                             Identifier.tryParse("more_rpg_classes:rage_modifier")),
-                            0.1F, EntityAttributeModifier.Operation.MULTIPLY_BASE)
+                            tier_1_multiplier, EntityAttributeModifier.Operation.MULTIPLY_BASE)
             )
     ));
 
@@ -148,7 +148,7 @@ public class Items {
                     new ItemConfig.AttributeModifier("generic.attack_damage", 0.05F, EntityAttributeModifier.Operation.MULTIPLY_BASE),
                     new ItemConfig.AttributeModifier(Objects.requireNonNull(
                             Identifier.tryParse("more_rpg_classes:rage_modifier")),
-                            0.15F, EntityAttributeModifier.Operation.MULTIPLY_BASE)
+                            tier_2_multiplier, EntityAttributeModifier.Operation.MULTIPLY_BASE)
             )
     ));
 
@@ -172,7 +172,7 @@ public class Items {
                     new ItemConfig.AttributeModifier("generic.attack_damage", 0.05F, EntityAttributeModifier.Operation.MULTIPLY_BASE),
                     new ItemConfig.AttributeModifier(Objects.requireNonNull(
                             Identifier.tryParse("more_rpg_classes:rage_modifier")),
-                            0.15F, EntityAttributeModifier.Operation.MULTIPLY_BASE)
+                            tier_2_multiplier, EntityAttributeModifier.Operation.MULTIPLY_BASE)
             )
     ));
 
@@ -225,7 +225,7 @@ public class Items {
                     new ItemConfig.AttributeModifier("generic.attack_damage", 0.1F, EntityAttributeModifier.Operation.MULTIPLY_BASE),
                     new ItemConfig.AttributeModifier(Objects.requireNonNull(
                             Identifier.tryParse("more_rpg_classes:rage_modifier")),
-                            0.2F, EntityAttributeModifier.Operation.MULTIPLY_BASE)
+                            0.1F, EntityAttributeModifier.Operation.MULTIPLY_BASE)
             )
     ));
     public static Entry unique_rage_necklace = add(new Identifier(AdditionalJewelry.MOD_ID, "unique_rage_necklace"), Rarity.RARE, true ,new ItemConfig.Item(
@@ -233,7 +233,7 @@ public class Items {
                     new ItemConfig.AttributeModifier("generic.attack_damage", 0.1F, EntityAttributeModifier.Operation.MULTIPLY_BASE),
                     new ItemConfig.AttributeModifier(Objects.requireNonNull(
                             Identifier.tryParse("more_rpg_classes:rage_modifier")),
-                            0.2F, EntityAttributeModifier.Operation.MULTIPLY_BASE)
+                            0.1F, EntityAttributeModifier.Operation.MULTIPLY_BASE)
             )
     ));
     public static Entry vampire_ring = add(new Identifier(AdditionalJewelry.MOD_ID, "vampire_ring"), Rarity.RARE, true, new ItemConfig.Item(

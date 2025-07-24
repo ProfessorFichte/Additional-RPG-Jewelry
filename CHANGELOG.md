@@ -1,3 +1,7 @@
+1.1.1 - 1.20.1
+- nerf Rage Jewelry
+- Item Config Reset -> v8
+
 1.1.0 - 1.20.1
 - Visual Enhancement Update!
 
