@@ -10,7 +10,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.text.Text;
-import net.tinyconfig.ConfigManager;
+import net.tiny_config.ConfigManager;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -20,7 +20,7 @@ public class AdditionalJewelry implements ModInitializer {
     public static final Logger LOGGER = LoggerFactory.getLogger("additional_rpg_jewelry");
 
 	public static ConfigManager<ItemConfig> itemConfig = new ConfigManager<>
-			("items_v7", Default.items)
+			("items_v0", Default.items)
 			.builder()
 			.setDirectory(MOD_ID)
 			.sanitize(true)

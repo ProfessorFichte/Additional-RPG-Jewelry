@@ -3,7 +3,8 @@ package net.additional_jewelry.items;
 import net.additional_jewelry.AdditionalJewelry;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.loader.api.FabricLoader;
-import net.jewelry.api.JewelryItem;
+import net.jewelry.items.JewelryFactory;
+import net.jewelry.items.JewelryItem;
 import net.jewelry.config.ItemConfig;
 import net.minecraft.component.type.AttributeModifierSlot;
 import net.minecraft.component.type.AttributeModifiersComponent;
@@ -24,24 +25,19 @@ import static net.jewelry.items.JewelryItems.GENERIC_ATTACK_DAMAGE;
 import static net.jewelry.items.JewelryItems.GENERIC_MAX_HEALTH;
 
 public class AdditionalJewelryItems {
-    public interface Factory {
-        JewelryItem create(Item.Settings settings, String lore);
-    }
     public static final ArrayList<Entry> all = new ArrayList<>();
     public static final class Entry {
         private final Identifier id;
-        private final Factory factory;
         private final Rarity rarity;
         private final ItemConfig.Item config;
         private final String lore;
         private boolean fireproof;
         int tier = 0;
 
-        public JewelryItem item;
+        public Item item;
 
-        public Entry(Identifier id, Factory factory, Rarity rarity, ItemConfig.Item config, String lore, boolean fireproof) {
+        public Entry(Identifier id, Rarity rarity, ItemConfig.Item config, String lore, boolean fireproof) {
             this.id = id;
-            this.factory = factory;
             this.rarity = rarity;
             this.config = config;
             this.lore = lore;
@@ -52,9 +48,6 @@ public class AdditionalJewelryItems {
             return id;
         }
 
-        public Factory factory() {
-            return factory;
-        }
 
         public Rarity rarity() {
             return rarity;
@@ -72,12 +65,13 @@ public class AdditionalJewelryItems {
             return fireproof;
         }
 
-        public JewelryItem create(Item.Settings settings) {
-            item = factory.create(settings, lore);
+        public Item create(Item.Settings settings, AttributeModifiersComponent attributes) {
+            var slot = (id.getPath().contains("ring") ? "ring" : (id.getPath().contains("necklace") ? "necklace" : null));
+            item = JewelryFactory.getFactory().apply(new JewelryFactory.ItemArgs(settings, attributes, lore, slot));
             return item;
         }
 
-        public JewelryItem item() {
+        public Item item() {
             return item;
         }
 
@@ -109,7 +103,7 @@ public class AdditionalJewelryItems {
     }
 
     public static Entry add(Identifier id, Rarity rarity, ItemConfig.Item config, String lore, boolean fireproof) {
-        var entry = new Entry(id, JewelryItem::new, rarity, config, lore, fireproof);
+        var entry = new Entry(id, rarity, config, lore, fireproof);
         all.add(entry);
         return entry;
     }
@@ -163,7 +157,7 @@ public class AdditionalJewelryItems {
     )).setTier(2);
     public static Entry rage_ring = add(Identifier.of(MOD_ID, "rage_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
             List.of(
-                    new ItemConfig.AttributeModifier(RAGE, 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    new ItemConfig.AttributeModifier(RAGE, tier_1_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     )).setTier(2);
 
@@ -184,7 +178,7 @@ public class AdditionalJewelryItems {
     )).setTier(2);
     public static Entry rage_necklace = add(Identifier.of(MOD_ID, "rage_necklace"), Rarity.UNCOMMON, new ItemConfig.Item(
             List.of(
-                    new ItemConfig.AttributeModifier(RAGE, 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    new ItemConfig.AttributeModifier(RAGE, tier_1_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     )).setTier(2);
 
@@ -207,7 +201,7 @@ public class AdditionalJewelryItems {
     public static Entry netherite_rage_ring = add(Identifier.of(MOD_ID, "netherite_rage_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
             List.of(
                     new ItemConfig.AttributeModifier("generic.attack_damage", 0.05F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier(RAGE, 0.15F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    new ItemConfig.AttributeModifier(RAGE, tier_2_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     )).setTier(3);
 
@@ -229,7 +223,7 @@ public class AdditionalJewelryItems {
     public static Entry netherite_rage_necklace = add(Identifier.of(MOD_ID, "netherite_rage_necklace"), Rarity.UNCOMMON, new ItemConfig.Item(
             List.of(
                     new ItemConfig.AttributeModifier("generic.attack_damage", 0.05F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier(RAGE, 0.15F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    new ItemConfig.AttributeModifier(RAGE, tier_2_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     )).setTier(3);
 
@@ -280,13 +274,13 @@ public class AdditionalJewelryItems {
     public static Entry unique_rage_ring = add(Identifier.of(MOD_ID, "unique_rage_ring"), Rarity.RARE, true, new ItemConfig.Item(
             List.of(
                     new ItemConfig.AttributeModifier("generic.attack_damage", 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier(RAGE, 0.2F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    new ItemConfig.AttributeModifier(RAGE, 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     )).setTier(4);
     public static Entry unique_rage_necklace = add(Identifier.of(MOD_ID, "unique_rage_necklace"), Rarity.RARE, true, new ItemConfig.Item(
             List.of(
                     new ItemConfig.AttributeModifier("generic.attack_damage", 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                    new ItemConfig.AttributeModifier(RAGE, 0.2F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                    new ItemConfig.AttributeModifier(RAGE, 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     )).setTier(4);
     public static Entry vampire_ring = add(Identifier.of(MOD_ID, "vampire_ring"), Rarity.RARE, true, new ItemConfig.Item(
@@ -400,8 +394,7 @@ public class AdditionalJewelryItems {
                     settings.fireproof();
                 }
 
-                var item = entry.create(settings);
-                item.setConfigurableModifiers(attributes.build());
+                var item = entry.create(settings.maxCount(1), attributes.build());
 
                 Registry.register(Registries.ITEM, entry.id(), item);
             }

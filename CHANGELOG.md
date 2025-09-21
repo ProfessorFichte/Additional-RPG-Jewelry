@@ -1,3 +1,7 @@
+2.1.1 - 1.21.1
+- Update to newest Jewelry & Spell Power & MRPG Lib Version
+- Nerf Rage Jewelry
+
 2.1.0 - 1.21.1
 - Visual Enhancement Update!
 - update some lore description and item names of Unique Jewelry
