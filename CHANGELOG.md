@@ -1,3 +1,13 @@
+2.2.10 - 1.21.1
+- Move to Architectury Enviroment for Multiloader
+- Neoforge Beta!
+- Added 2 new Gems -> Aquamarine & Malachite
+- Removed Earth, Ocean & Sky BAse & Netherite Necklaces & Rings
+- Added Malachite & Aquamarine Ring's and Necklaces
+- Aquamarine Jewelry will give Air- & Water-Spell Power
+- Malachite Jewelry will give Earth- & Nature-Spell Power
+- Normal Rings & Necklaces now get injected in Jeweler Trades
+
 2.1.1 - 1.21.1
 - Update to newest Jewelry & Spell Power & MRPG Lib Version
 - Nerf Rage Jewelry

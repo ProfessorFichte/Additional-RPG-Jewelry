@@ -33,14 +33,13 @@ public class AdditionalJewelryDataGen implements DataGeneratorEntrypoint {
         public void generate(RecipeExporter exporter) {
             disassemble(exporter, List.of(AdditionalJewelryItems.driptstone_necklace.item), Items.POINTED_DRIPSTONE);
             disassemble(exporter, List.of(AdditionalJewelryItems.cactea_ring.item), Items.GREEN_DYE);
-            disassemble(exporter, List.of(AdditionalJewelryItems.sky_ring.item), Items.COPPER_INGOT);
-            disassemble(exporter, List.of(AdditionalJewelryItems.sky_necklace.item), Items.COPPER_INGOT);
-            disassemble(exporter, List.of(AdditionalJewelryItems.earth_ring.item), Items.IRON_NUGGET);
-            disassemble(exporter, List.of(AdditionalJewelryItems.earth_necklace.item), Items.IRON_NUGGET);
             disassemble(exporter, List.of(AdditionalJewelryItems.rage_ring.item), Items.IRON_NUGGET);
             disassemble(exporter, List.of(AdditionalJewelryItems.rage_necklace.item), Items.IRON_NUGGET);
-            disassemble(exporter, List.of(AdditionalJewelryItems.ocean_ring.item), Items.PRISMARINE_CRYSTALS);
-            disassemble(exporter, List.of(AdditionalJewelryItems.ocean_necklace.item), Items.PRISMARINE_CRYSTALS);
+            disassemble(exporter,
+                    AdditionalJewelryItems.all.stream()
+                            .filter(entry -> entry.tier() == 2)
+                            .map(entry -> (ItemConvertible) entry.item()).toList(),
+                    Items.GOLD_NUGGET);
             disassemble(exporter,
                     AdditionalJewelryItems.all.stream()
                             .filter(entry -> entry.id().getPath().contains("netherite"))

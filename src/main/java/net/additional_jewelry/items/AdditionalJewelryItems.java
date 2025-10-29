@@ -140,19 +140,16 @@ public class AdditionalJewelryItems {
     )).setTier(1);
 
     //UNCOMMON
-    public static Entry ocean_ring = add(Identifier.of(MOD_ID, "ocean_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
+    public static Entry aquamarine_ring = add(Identifier.of(MOD_ID, "aquamarine_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
             List.of(
+                    new ItemConfig.AttributeModifier(MoreSpellSchools.AIR.id, tier_1_bonus),
                     new ItemConfig.AttributeModifier(MoreSpellSchools.WATER.id, tier_1_bonus)
             )
     )).setTier(2);
-    public static Entry sky_ring = add(Identifier.of(MOD_ID, "sky_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
+    public static Entry malachite_ring = add(Identifier.of(MOD_ID, "malachite_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
             List.of(
-                    new ItemConfig.AttributeModifier(MoreSpellSchools.AIR.id, tier_1_bonus)
-            )
-    )).setTier(2);
-    public static Entry earth_ring = add(Identifier.of(MOD_ID, "earth_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
-            List.of(
-                    new ItemConfig.AttributeModifier(MoreSpellSchools.EARTH.id, tier_1_bonus)
+                    new ItemConfig.AttributeModifier(MoreSpellSchools.EARTH.id, tier_1_bonus),
+                    new ItemConfig.AttributeModifier(MoreSpellSchools.NATURE.id, tier_1_bonus)
             )
     )).setTier(2);
     public static Entry rage_ring = add(Identifier.of(MOD_ID, "rage_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
@@ -161,19 +158,16 @@ public class AdditionalJewelryItems {
             )
     )).setTier(2);
 
-    public static Entry ocean_necklace = add(Identifier.of(MOD_ID, "ocean_necklace"), Rarity.UNCOMMON, new ItemConfig.Item(
+    public static Entry aquamarine_necklace = add(Identifier.of(MOD_ID, "aquamarine_necklace"), Rarity.UNCOMMON, new ItemConfig.Item(
             List.of(
+                    new ItemConfig.AttributeModifier(MoreSpellSchools.AIR.id, tier_1_bonus),
                     new ItemConfig.AttributeModifier(MoreSpellSchools.WATER.id, tier_1_bonus)
             )
     )).setTier(2);
-    public static Entry sky_necklace = add(Identifier.of(MOD_ID, "sky_necklace"), Rarity.UNCOMMON, new ItemConfig.Item(
+    public static Entry malachite_necklace = add(Identifier.of(MOD_ID, "malachite_necklace"), Rarity.UNCOMMON, new ItemConfig.Item(
             List.of(
-                    new ItemConfig.AttributeModifier(MoreSpellSchools.AIR.id, tier_1_bonus)
-            )
-    )).setTier(2);
-    public static Entry earth_necklace = add(Identifier.of(MOD_ID, "earth_necklace"), Rarity.UNCOMMON, new ItemConfig.Item(
-            List.of(
-                    new ItemConfig.AttributeModifier(MoreSpellSchools.EARTH.id, tier_1_bonus)
+                    new ItemConfig.AttributeModifier(MoreSpellSchools.EARTH.id, tier_1_bonus),
+                    new ItemConfig.AttributeModifier(MoreSpellSchools.NATURE.id, tier_1_bonus)
             )
     )).setTier(2);
     public static Entry rage_necklace = add(Identifier.of(MOD_ID, "rage_necklace"), Rarity.UNCOMMON, new ItemConfig.Item(
@@ -183,19 +177,16 @@ public class AdditionalJewelryItems {
     )).setTier(2);
 
     //NETHERITE_VERSIONS
-    public static Entry netherite_ocean_ring = add(Identifier.of(MOD_ID, "netherite_ocean_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
+    public static Entry netherite_aquamarine_ring = add(Identifier.of(MOD_ID, "netherite_aquamarine_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
             List.of(
+                    new ItemConfig.AttributeModifier(MoreSpellSchools.AIR.id, tier_2_bonus),
                     new ItemConfig.AttributeModifier(MoreSpellSchools.WATER.id, tier_2_bonus)
             )
     )).setTier(3);
-    public static Entry netherite_sky_ring = add(Identifier.of(MOD_ID, "netherite_sky_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
+    public static Entry netherite_malachite_ring = add(Identifier.of(MOD_ID, "netherite_malachite_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
             List.of(
-                    new ItemConfig.AttributeModifier(MoreSpellSchools.AIR.id, tier_2_bonus)
-            )
-    )).setTier(3);
-    public static Entry netherite_earth_ring = add(Identifier.of(MOD_ID, "netherite_earth_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
-            List.of(
-                    new ItemConfig.AttributeModifier(MoreSpellSchools.EARTH.id, tier_2_bonus)
+                    new ItemConfig.AttributeModifier(MoreSpellSchools.EARTH.id, tier_2_bonus),
+                    new ItemConfig.AttributeModifier(MoreSpellSchools.NATURE.id, tier_2_bonus)
             )
     )).setTier(3);
     public static Entry netherite_rage_ring = add(Identifier.of(MOD_ID, "netherite_rage_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
@@ -205,19 +196,16 @@ public class AdditionalJewelryItems {
             )
     )).setTier(3);
 
-    public static Entry netherite_ocean_necklace = add(Identifier.of(MOD_ID, "netherite_ocean_necklace"), Rarity.UNCOMMON, new ItemConfig.Item(
+    public static Entry netherite_aquamarine_necklace = add(Identifier.of(MOD_ID, "netherite_aquamarine_necklace"), Rarity.UNCOMMON, new ItemConfig.Item(
             List.of(
+                    new ItemConfig.AttributeModifier(MoreSpellSchools.AIR.id, tier_2_bonus),
                     new ItemConfig.AttributeModifier(MoreSpellSchools.WATER.id, tier_2_bonus)
             )
     )).setTier(3);
-    public static Entry netherite_sky_necklace = add(Identifier.of(MOD_ID, "netherite_sky_necklace"), Rarity.UNCOMMON, new ItemConfig.Item(
+    public static Entry netherite_malachite_necklace = add(Identifier.of(MOD_ID, "netherite_malachite_necklace"), Rarity.UNCOMMON, new ItemConfig.Item(
             List.of(
-                    new ItemConfig.AttributeModifier(MoreSpellSchools.AIR.id, tier_2_bonus)
-            )
-    )).setTier(3);
-    public static Entry netherite_earth_necklace = add(Identifier.of(MOD_ID, "netherite_earth_necklace"), Rarity.UNCOMMON, new ItemConfig.Item(
-            List.of(
-                    new ItemConfig.AttributeModifier(MoreSpellSchools.EARTH.id, tier_2_bonus)
+                    new ItemConfig.AttributeModifier(MoreSpellSchools.EARTH.id, tier_2_bonus),
+                    new ItemConfig.AttributeModifier(MoreSpellSchools.NATURE.id, tier_2_bonus)
             )
     )).setTier(3);
     public static Entry netherite_rage_necklace = add(Identifier.of(MOD_ID, "netherite_rage_necklace"), Rarity.UNCOMMON, new ItemConfig.Item(
