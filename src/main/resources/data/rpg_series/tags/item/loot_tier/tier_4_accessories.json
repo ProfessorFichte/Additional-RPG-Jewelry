@@ -13,6 +13,14 @@
     "additional_rpg_jewelry:spell_vampire_ring",
     "additional_rpg_jewelry:spell_vampire_necklace",
     {
+      "id": "additional_rpg_jewelry:unique_forrest_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_forrest_necklace",
+      "required": false
+    },
+    {
       "id": "additional_rpg_jewelry:unique_witcher_ring",
       "required": false
     },

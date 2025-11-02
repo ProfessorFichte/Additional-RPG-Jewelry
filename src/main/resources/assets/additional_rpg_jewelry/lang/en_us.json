@@ -49,12 +49,17 @@
   "item.additional_rpg_jewelry.unique_sky_necklace": "Zanite Aether Pendant",
   "item.additional_rpg_jewelry.unique_sky_necklace.lore": "Forged by Valkyries in the aether dimension.",
 
+  "item.additional_rpg_jewelry.unique_forrest_ring": "Forrest's Spirit Ring",
+  "item.additional_rpg_jewelry.unique_forrest_ring.lore": "Forged by mighty Druids in a mythical forrest with the Heart of the Forest.",
+  "item.additional_rpg_jewelry.unique_forrest_necklace": "Leshen's Amulet",
+  "item.additional_rpg_jewelry.unique_forrest_necklace.lore": "Crafted by a powerful Druid from the wood and the heart of a ancient Leshen.",
+
   "item.additional_rpg_jewelry.vampire_ring": "Ring of Regis",
-  "item.additional_rpg_jewelry.vampire_ring.lore": "I need some blood...",
+  "item.additional_rpg_jewelry.vampire_ring.lore": "The ring thirsts for blood...",
   "item.additional_rpg_jewelry.vampire_necklace": "Chain of Gharasham",
   "item.additional_rpg_jewelry.vampire_necklace.lore": "Nac thi sel me thaur?",
   "item.additional_rpg_jewelry.spell_vampire_ring": "Runic Scarlet Ring",
-  "item.additional_rpg_jewelry.spell_vampire_ring.lore": "Forged by evil blood mages with, powerful spells are engraved.",
+  "item.additional_rpg_jewelry.spell_vampire_ring.lore": "Forged by evil blood mages, powerful spells are engraved.",
   "item.additional_rpg_jewelry.spell_vampire_necklace": "Sacred Scarlet Necklace",
   "item.additional_rpg_jewelry.spell_vampire_necklace.lore": "Old Necklace created with vampiric magic power.",
 

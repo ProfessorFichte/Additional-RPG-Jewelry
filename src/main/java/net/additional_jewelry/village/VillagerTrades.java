@@ -13,36 +13,37 @@ public class VillagerTrades {
 
     public static void register(){
         VillagerProfession jewelerProfession = JewelryVillagers.JEWELER_PROFESSION;
-
-        TradeOfferHelper.registerVillagerOffers(jewelerProfession, 4,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new TradedItem(Items.EMERALD, 35),
-                            new ItemStack(AdditionalJewelryItems.malachite_ring.item(), 1),
-                            5, 13, 0.1F));
-                    factories.add((entity, random) -> new TradeOffer(
-                            new TradedItem(Items.EMERALD, 35),
-                            new ItemStack(AdditionalJewelryItems.aquamarine_ring.item(), 1),
-                            5, 13, 0.1F));
-                    factories.add((entity, random) -> new TradeOffer(
-                            new TradedItem(Items.EMERALD, 35),
-                            new ItemStack(AdditionalJewelryItems.rage_ring.item(), 1),
-                            5, 13, 0.1F));
-                });
-        TradeOfferHelper.registerVillagerOffers(jewelerProfession, 5,
-                factories -> {
-                    factories.add((entity, random) -> new TradeOffer(
-                            new TradedItem(Items.EMERALD, 45),
-                            new ItemStack(AdditionalJewelryItems.malachite_necklace.item(), 1),
-                            3, 15, 0.1F));
-                    factories.add((entity, random) -> new TradeOffer(
-                            new TradedItem(Items.EMERALD, 45),
-                            new ItemStack(AdditionalJewelryItems.aquamarine_necklace.item(), 1),
-                            3, 15, 0.1F));
-                    factories.add((entity, random) -> new TradeOffer(
-                            new TradedItem(Items.EMERALD, 45),
-                            new ItemStack(AdditionalJewelryItems.rage_necklace.item(), 1),
-                            3, 15, 0.1F));
-                });
+        if(jewelerProfession != null){
+            TradeOfferHelper.registerVillagerOffers(jewelerProfession, 4,
+                    factories -> {
+                        factories.add((entity, random) -> new TradeOffer(
+                                new TradedItem(Items.EMERALD, 35),
+                                new ItemStack(AdditionalJewelryItems.malachite_ring.item(), 1),
+                                5, 13, 0.1F));
+                        factories.add((entity, random) -> new TradeOffer(
+                                new TradedItem(Items.EMERALD, 35),
+                                new ItemStack(AdditionalJewelryItems.aquamarine_ring.item(), 1),
+                                5, 13, 0.1F));
+                        factories.add((entity, random) -> new TradeOffer(
+                                new TradedItem(Items.EMERALD, 35),
+                                new ItemStack(AdditionalJewelryItems.rage_ring.item(), 1),
+                                5, 13, 0.1F));
+                    });
+            TradeOfferHelper.registerVillagerOffers(jewelerProfession, 5,
+                    factories -> {
+                        factories.add((entity, random) -> new TradeOffer(
+                                new TradedItem(Items.EMERALD, 45),
+                                new ItemStack(AdditionalJewelryItems.malachite_necklace.item(), 1),
+                                3, 15, 0.1F));
+                        factories.add((entity, random) -> new TradeOffer(
+                                new TradedItem(Items.EMERALD, 45),
+                                new ItemStack(AdditionalJewelryItems.aquamarine_necklace.item(), 1),
+                                3, 15, 0.1F));
+                        factories.add((entity, random) -> new TradeOffer(
+                                new TradedItem(Items.EMERALD, 45),
+                                new ItemStack(AdditionalJewelryItems.rage_necklace.item(), 1),
+                                3, 15, 0.1F));
+                    });
+        }
     }
 }

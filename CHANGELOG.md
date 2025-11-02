@@ -1,4 +1,4 @@
-2.2.10 - 1.21.1
+2.2.0 - 1.21.1
 - Move to Architectury Enviroment for Multiloader
 - Neoforge Beta!
 - Added 2 new Gems -> Aquamarine & Malachite
@@ -7,6 +7,8 @@
 - Aquamarine Jewelry will give Air- & Water-Spell Power
 - Malachite Jewelry will give Earth- & Nature-Spell Power
 - Normal Rings & Necklaces now get injected in Jeweler Trades
+- Slightly Buff the Rage Ring & Necklace
+- Add Unique Nature Power Ring and Necklace (Will be enabled once the Druid Mod from Rulft44 is released!)
 
 2.1.1 - 1.21.1
 - Update to newest Jewelry & Spell Power & MRPG Lib Version

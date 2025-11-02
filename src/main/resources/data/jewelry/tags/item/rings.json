@@ -12,7 +12,10 @@
     "additional_rpg_jewelry:netherite_rage_ring",
     "additional_rpg_jewelry:unique_rage_ring",
     "additional_rpg_jewelry:unique_sky_ring",
-
+    {
+      "id": "additional_rpg_jewelry:unique_forrest_ring",
+      "required": false
+    },
     {
       "id": "additional_rpg_jewelry:silver_sapphire_ring",
       "required": false
