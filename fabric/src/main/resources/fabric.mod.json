@@ -10,12 +10,12 @@
 	"contact": {
 		"sources": "https://github.com/ProfessorFichte"
 	},
-	"license": "MIT",
+	"license": "ARR",
 	"icon": "assets/additional_rpg_jewelry/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-          "net.additional_jewelry.AdditionalJewelry"
+          "com.additional_jewelry.fabric.FabricMod"
 		],
 		"fabric-datagen": [
 			"net.additional_jewelry.datagen.AdditionalJewelryDataGen"

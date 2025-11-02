@@ -4,7 +4,6 @@ import net.additional_jewelry.AdditionalJewelry;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.loader.api.FabricLoader;
 import net.jewelry.items.JewelryFactory;
-import net.jewelry.items.JewelryItem;
 import net.jewelry.config.ItemConfig;
 import net.minecraft.component.type.AttributeModifierSlot;
 import net.minecraft.component.type.AttributeModifiersComponent;
@@ -273,6 +272,8 @@ public class AdditionalJewelryItems {
                     new ItemConfig.AttributeModifier(RAGE, 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     )).setTier(4);
+    ///ENABLE WHEN DRUIDS MOD BY RULFT44 is released!!!
+    /*
     public static Entry unique_forrest_ring = add(Identifier.of(MOD_ID, "unique_forrest_ring"), Rarity.RARE, true, new ItemConfig.Item(
             List.of(
                     new ItemConfig.AttributeModifier(MoreSpellSchools.NATURE.id, tier_3_spell_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
@@ -287,6 +288,7 @@ public class AdditionalJewelryItems {
                     new ItemConfig.AttributeModifier(SpellPowerMechanics.HASTE.id, tier_3_secondary_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     )).setTier(4);
+     */
     public static Entry vampire_ring = add(Identifier.of(MOD_ID, "vampire_ring"), Rarity.RARE, true, new ItemConfig.Item(
             List.of(
                     new ItemConfig.AttributeModifier(GENERIC_ATTACK_DAMAGE, 0.12F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),

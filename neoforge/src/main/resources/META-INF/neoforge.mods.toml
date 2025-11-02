@@ -1,0 +1,39 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+#issueTrackerURL = ""
+license = "ARR"
+
+[[mods]]
+modId = "additional_rpg_jewelry"
+version = "${version}"
+displayName = "Additional Jewelry"
+authors = "Fichte"
+description = '''
+Add-On for the Jewelry Mod, adding jewelry for the More RPG Classes Series.
+'''
+#logoFile = ""
+
+[[dependencies.additional_rpg_jewelry]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.additional_rpg_jewelry]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.additional_rpg_jewelry]]
+modId = "jewelry"
+type = "required"
+versionRange = "[${jewelry_version},)"
+ordering = "BEFORE"
+side = "BOTH"
+
+
+[[mixins]]
+config = "additional_rpg_jewelry.mixins.json"
