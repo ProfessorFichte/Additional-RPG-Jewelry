@@ -25,7 +25,7 @@ public class AdditionalJewelry{
     public static final Logger LOGGER = LoggerFactory.getLogger("additional_rpg_jewelry");
 
 	public static ConfigManager<ItemConfig> itemConfig = new ConfigManager<>
-			("items_v1", Default.items)
+			("items_v2", Default.items)
 			.builder()
 			.setDirectory(MOD_ID)
 			.sanitize(true)

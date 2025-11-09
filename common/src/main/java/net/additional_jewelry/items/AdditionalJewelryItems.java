@@ -107,7 +107,15 @@ public class AdditionalJewelryItems {
         return entry;
     }
 
+    public static final String GENERIC_ATTACK_SPEED = "generic.attack_speed";
+
+    public static final String COMBATROLL_MOD_ID = "combat_roll";
     public static final String COMBATROLL_RECHARGE = "combat_roll:recharge";
+
+    public static final String CRIT_MOD_ID = "critical_strike";
+    public static final String CRITICAL_CHANCE_ID = CRIT_MOD_ID + ":chance";
+    public static final String CRITICAL_DAMAGE_ID = CRIT_MOD_ID + ":damage";
+
     public static final String DAMAGE_REFLECT = "more_rpg_classes:damage_reflect_modifier";
     public static final String RAGE = "more_rpg_classes:rage_modifier";
     public static final String LIFESTEAL = "more_rpg_classes:lifesteal_modifier";
@@ -151,7 +159,12 @@ public class AdditionalJewelryItems {
                     new ItemConfig.AttributeModifier(MoreSpellSchools.NATURE.id, tier_1_bonus)
             )
     )).setTier(2);
-    public static Entry rage_ring = add(Identifier.of(MOD_ID, "rage_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
+    public static Entry rage_ring = add(Identifier.of(MOD_ID, "rage_ring"), Rarity.UNCOMMON, ItemConfig.itemWithCondition(
+            CRIT_MOD_ID,
+            List.of(
+                    new ItemConfig.AttributeModifier(CRITICAL_DAMAGE_ID, 0.06F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                    new ItemConfig.AttributeModifier(RAGE, tier_1_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+            ),
             List.of(
                     new ItemConfig.AttributeModifier(RAGE, tier_1_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                     new ItemConfig.AttributeModifier("generic.attack_damage", tier_1_multiplier/2, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
@@ -170,7 +183,12 @@ public class AdditionalJewelryItems {
                     new ItemConfig.AttributeModifier(MoreSpellSchools.NATURE.id, tier_1_bonus)
             )
     )).setTier(2);
-    public static Entry rage_necklace = add(Identifier.of(MOD_ID, "rage_necklace"), Rarity.UNCOMMON, new ItemConfig.Item(
+    public static Entry rage_necklace = add(Identifier.of(MOD_ID, "rage_necklace"), Rarity.UNCOMMON, ItemConfig.itemWithCondition(
+            CRIT_MOD_ID,
+            List.of(
+                    new ItemConfig.AttributeModifier(CRITICAL_DAMAGE_ID, 0.06F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                    new ItemConfig.AttributeModifier(RAGE, tier_1_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+            ),
             List.of(
                     new ItemConfig.AttributeModifier(RAGE, tier_1_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                     new ItemConfig.AttributeModifier("generic.attack_damage", tier_1_multiplier/2, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
@@ -190,10 +208,15 @@ public class AdditionalJewelryItems {
                     new ItemConfig.AttributeModifier(MoreSpellSchools.NATURE.id, tier_2_bonus)
             )
     )).setTier(3);
-    public static Entry netherite_rage_ring = add(Identifier.of(MOD_ID, "netherite_rage_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
+    public static Entry netherite_rage_ring = add(Identifier.of(MOD_ID, "netherite_rage_ring"), Rarity.UNCOMMON, ItemConfig.itemWithCondition(
+            CRIT_MOD_ID,
             List.of(
-                    new ItemConfig.AttributeModifier("generic.attack_damage", 0.05F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                    new ItemConfig.AttributeModifier(CRITICAL_DAMAGE_ID, 0.08F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                     new ItemConfig.AttributeModifier(RAGE, tier_2_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+            ),
+            List.of(
+                    new ItemConfig.AttributeModifier(RAGE, tier_2_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                    new ItemConfig.AttributeModifier("generic.attack_damage", 0.05F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     )).setTier(3);
 
@@ -209,10 +232,15 @@ public class AdditionalJewelryItems {
                     new ItemConfig.AttributeModifier(MoreSpellSchools.NATURE.id, tier_2_bonus)
             )
     )).setTier(3);
-    public static Entry netherite_rage_necklace = add(Identifier.of(MOD_ID, "netherite_rage_necklace"), Rarity.UNCOMMON, new ItemConfig.Item(
+    public static Entry netherite_rage_necklace = add(Identifier.of(MOD_ID, "netherite_rage_necklace"), Rarity.UNCOMMON, ItemConfig.itemWithCondition(
+            CRIT_MOD_ID,
             List.of(
-                    new ItemConfig.AttributeModifier("generic.attack_damage", 0.05F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                    new ItemConfig.AttributeModifier(CRITICAL_DAMAGE_ID, 0.08F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                     new ItemConfig.AttributeModifier(RAGE, tier_2_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+            ),
+            List.of(
+                    new ItemConfig.AttributeModifier(RAGE, tier_2_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                    new ItemConfig.AttributeModifier("generic.attack_damage", 0.05F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     )).setTier(3);
 
@@ -260,13 +288,23 @@ public class AdditionalJewelryItems {
                     new ItemConfig.AttributeModifier(SpellPowerMechanics.CRITICAL_DAMAGE.id, tier_3_secondary_crit_damage_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     )).setTier(4);
-    public static Entry unique_rage_ring = add(Identifier.of(MOD_ID, "unique_rage_ring"), Rarity.RARE, true, new ItemConfig.Item(
+    public static Entry unique_rage_ring = add(Identifier.of(MOD_ID, "unique_rage_ring"), Rarity.RARE, true, ItemConfig.itemWithCondition(
+            CRIT_MOD_ID,
+            List.of(
+                    new ItemConfig.AttributeModifier(CRITICAL_DAMAGE_ID, 0.12F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                    new ItemConfig.AttributeModifier(RAGE, 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+            ),
             List.of(
                     new ItemConfig.AttributeModifier("generic.attack_damage", 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                     new ItemConfig.AttributeModifier(RAGE, 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     )).setTier(4);
-    public static Entry unique_rage_necklace = add(Identifier.of(MOD_ID, "unique_rage_necklace"), Rarity.RARE, true, new ItemConfig.Item(
+    public static Entry unique_rage_necklace = add(Identifier.of(MOD_ID, "unique_rage_necklace"), Rarity.RARE, true, ItemConfig.itemWithCondition(
+            CRIT_MOD_ID,
+            List.of(
+                    new ItemConfig.AttributeModifier(CRITICAL_DAMAGE_ID, 0.12F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                    new ItemConfig.AttributeModifier(RAGE, 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+            ),
             List.of(
                     new ItemConfig.AttributeModifier("generic.attack_damage", 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                     new ItemConfig.AttributeModifier(RAGE, 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
@@ -351,16 +389,28 @@ public class AdditionalJewelryItems {
                                 new ItemConfig.AttributeModifier(SIGN_INTENSITY,
                                         tier_2_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
                         ))).setTier(3);
-                add(Identifier.of(AdditionalJewelry.MOD_ID, "dark_steel_jade_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
+                add(Identifier.of(AdditionalJewelry.MOD_ID, "dark_steel_jade_ring"), Rarity.UNCOMMON, ItemConfig.itemWithCondition(
+                        COMBATROLL_MOD_ID,
                         List.of(new ItemConfig.AttributeModifier(ADRENALINE, 0.14F , EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                                 new ItemConfig.AttributeModifier("generic.attack_damage", 0.05F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                                 new ItemConfig.AttributeModifier(COMBATROLL_RECHARGE, 0.025F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
-                        ))).setTier(3);
-                add(Identifier.of(AdditionalJewelry.MOD_ID, "dark_steel_jade_necklace"), Rarity.UNCOMMON, new ItemConfig.Item(
+                        ),
                         List.of(new ItemConfig.AttributeModifier(ADRENALINE, 0.14F , EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                                 new ItemConfig.AttributeModifier("generic.attack_damage", 0.05F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
-                                new ItemConfig.AttributeModifier(COMBATROLL_RECHARGE, 0.025F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
-                        ))).setTier(3);
+                                new ItemConfig.AttributeModifier(GENERIC_ATTACK_SPEED, 0.04F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                        )
+                )).setTier(3);
+                add(Identifier.of(AdditionalJewelry.MOD_ID, "dark_steel_jade_necklace"), Rarity.UNCOMMON, ItemConfig.itemWithCondition(
+                        COMBATROLL_MOD_ID,
+                        List.of(new ItemConfig.AttributeModifier(ADRENALINE, 0.14F , EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                        new ItemConfig.AttributeModifier("generic.attack_damage", 0.05F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                        new ItemConfig.AttributeModifier(COMBATROLL_RECHARGE, 0.025F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                        ),
+                        List.of(new ItemConfig.AttributeModifier(ADRENALINE, 0.14F , EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                        new ItemConfig.AttributeModifier("generic.attack_damage", 0.05F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
+                                        new ItemConfig.AttributeModifier(GENERIC_ATTACK_SPEED, 0.04F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
+                        )
+                        )).setTier(3);
                 add(Identifier.of(AdditionalJewelry.MOD_ID, "unique_witcher_ring"), Rarity.RARE,true, new ItemConfig.Item(
                         List.of(new ItemConfig.AttributeModifier(ADRENALINE, 0.2F , EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                                 new ItemConfig.AttributeModifier("generic.attack_damage", 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),

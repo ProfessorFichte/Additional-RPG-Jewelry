@@ -1,3 +1,9 @@
+2.2.1 - 1.21.1
+- fix attreibutes from jewelry not working in trinkets slot
+- add conditional attributes for Witcher Steel Jewelry if the combat roll mod is loaded
+- add conditional attributes for Rage Jewelry if the critical strike mod is loaded
+
+
 2.2.0 - 1.21.1
 - Move to Architectury Enviroment for Multiloader
 - Neoforge Beta!
