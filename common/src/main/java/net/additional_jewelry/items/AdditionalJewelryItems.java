@@ -66,7 +66,7 @@ public class AdditionalJewelryItems {
 
         public Item create(Item.Settings settings, AttributeModifiersComponent attributes) {
             var slot = (id.getPath().contains("ring") ? "ring" : (id.getPath().contains("necklace") ? "necklace" : null));
-            item = JewelryFactory.getFactory().apply(new JewelryFactory.ItemArgs(settings, attributes, lore, slot));
+            item = AdditionalJewelryFactory.getFactory().apply(new AdditionalJewelryFactory.ItemArgs(settings, attributes, lore, slot));
             return item;
         }
 
@@ -381,7 +381,7 @@ public class AdditionalJewelryItems {
                 }
 
                 AttributeModifiersComponent.Builder attributes = AttributeModifiersComponent.builder();
-                for (var modifier : itemConfig.attributes) {
+                for (var modifier : itemConfig.selectedAttributes()) {
                     var id = Identifier.of(modifier.id);
                     var attribute = Registries.ATTRIBUTE.getEntry(id);
                     if (attribute.isPresent()) {
@@ -395,16 +395,16 @@ public class AdditionalJewelryItems {
                     }
                 }
                 var settings = new Item.Settings()
-                        .rarity(entry.rarity);
+                        .rarity(entry.rarity)
+                        .maxCount(1);
                 if (entry.fireproof()) {
-                    settings.fireproof();
+                    settings = settings.fireproof();
                 }
 
                 var item = entry.create(settings.maxCount(1), attributes.build());
 
                 Registry.register(Registries.ITEM, entry.id(), item);
             }
-
             ItemGroupEvents.modifyEntriesEvent(Group.ADDITIONAL_JEWELRY_KEY).register((content) -> {
                 for (var entry : all) {
                     content.add(entry.item());
