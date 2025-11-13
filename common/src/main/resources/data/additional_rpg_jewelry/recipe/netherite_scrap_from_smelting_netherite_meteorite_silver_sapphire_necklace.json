@@ -1,0 +1,27 @@
+{
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "witcher_rpg"
+      ]
+    }
+  ],
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "witcher_rpg"
+    }
+  ],
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 300,
+  "experience": 0.1,
+  "group": "disassemble",
+  "ingredient": {
+    "item": "additional_rpg_jewelry:meteorite_silver_sapphire_necklace"
+  },
+  "result": {
+    "id": "minecraft:netherite_scrap"
+  }
+}
