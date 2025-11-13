@@ -1,8 +1,13 @@
+2.2.2 - 1.21.1
+- fix wrong malachite necklace recipe
+- fix typo with unique forest jewelry (nature spell power)
+- add conditional smelting recipes for witcher jewelry
+
 2.2.1 - 1.21.1
 - fix attreibutes from jewelry not working in trinkets slot
 - add conditional attributes for Witcher Steel Jewelry if the combat roll mod is loaded
 - add conditional attributes for Rage Jewelry if the critical strike mod is loaded
-
+- enable unique nature spell power jewelry for rulfts druid mod
 
 2.2.0 - 1.21.1
 - Move to Architectury Enviroment for Multiloader

@@ -37,7 +37,7 @@ public class AdditionalJewelryDataGen implements DataGeneratorEntrypoint {
             disassemble(exporter, List.of(AdditionalJewelryItems.rage_necklace.item), Items.IRON_NUGGET);
             disassemble(exporter,
                     AdditionalJewelryItems.all.stream()
-                            .filter(entry -> entry.tier() == 2)
+                            .filter(entry -> entry.tier() == 2 && !entry.id().getPath().contains("rage"))
                             .map(entry -> (ItemConvertible) entry.item()).toList(),
                     Items.GOLD_NUGGET);
             disassemble(exporter,

@@ -310,23 +310,20 @@ public class AdditionalJewelryItems {
                     new ItemConfig.AttributeModifier(RAGE, 0.1F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     )).setTier(4);
-    ///ENABLE WHEN DRUIDS MOD BY RULFT44 is released!!!
-    /*
-    public static Entry unique_forrest_ring = add(Identifier.of(MOD_ID, "unique_forrest_ring"), Rarity.RARE, true, new ItemConfig.Item(
+    public static Entry unique_forest_ring = add(Identifier.of(MOD_ID, "unique_forest_ring"), Rarity.RARE, true, new ItemConfig.Item(
             List.of(
                     new ItemConfig.AttributeModifier(MoreSpellSchools.NATURE.id, tier_3_spell_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                     new ItemConfig.AttributeModifier(SpellPowerMechanics.CRITICAL_CHANCE.id, tier_3_secondary_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                     new ItemConfig.AttributeModifier(SpellPowerMechanics.HASTE.id, tier_3_secondary_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     )).setTier(4);
-    public static Entry unique_forrest_necklace = add(Identifier.of(MOD_ID, "unique_forrest_necklace"), Rarity.RARE, true, new ItemConfig.Item(
+    public static Entry unique_forest_necklace = add(Identifier.of(MOD_ID, "unique_forest_necklace"), Rarity.RARE, true, new ItemConfig.Item(
             List.of(
                     new ItemConfig.AttributeModifier(MoreSpellSchools.NATURE.id, tier_3_spell_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                     new ItemConfig.AttributeModifier(SpellPowerMechanics.CRITICAL_CHANCE.id, tier_3_secondary_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                     new ItemConfig.AttributeModifier(SpellPowerMechanics.HASTE.id, tier_3_secondary_multiplier, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
             )
     )).setTier(4);
-     */
     public static Entry vampire_ring = add(Identifier.of(MOD_ID, "vampire_ring"), Rarity.RARE, true, new ItemConfig.Item(
             List.of(
                     new ItemConfig.AttributeModifier(GENERIC_ATTACK_DAMAGE, 0.12F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
@@ -373,10 +370,12 @@ public class AdditionalJewelryItems {
                         ))).setTier(2);
                 add(Identifier.of(AdditionalJewelry.MOD_ID,"steel_jade_ring"),Rarity.UNCOMMON, new ItemConfig.Item(
                         List.of(
+                                new ItemConfig.AttributeModifier("generic.attack_damage", 0.03F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                                 new ItemConfig.AttributeModifier(ADRENALINE, 0.08F , EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
                                 ))).setTier(2);
                 add(Identifier.of(AdditionalJewelry.MOD_ID,"steel_jade_necklace"),Rarity.UNCOMMON, new ItemConfig.Item(
                         List.of(
+                                new ItemConfig.AttributeModifier("generic.attack_damage", 0.03F, EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE),
                                 new ItemConfig.AttributeModifier(ADRENALINE, 0.08F , EntityAttributeModifier.Operation.ADD_MULTIPLIED_BASE)
                         ))).setTier(2);
                 add(Identifier.of(AdditionalJewelry.MOD_ID, "meteorite_silver_sapphire_ring"), Rarity.UNCOMMON, new ItemConfig.Item(
