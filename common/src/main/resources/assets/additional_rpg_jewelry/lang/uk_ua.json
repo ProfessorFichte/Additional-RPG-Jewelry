@@ -1,0 +1,70 @@
+{
+  "itemGroup.additional_rpg_jewelry.general": "Додаткові прикраси",
+
+  "item.additional_rpg_jewelry.cactea_ring": "Кактусове кільце",
+  "item.additional_rpg_jewelry.dripstone_necklace": "Намисто з крапельнику",
+
+  "item.additional_rpg_jewelry.aquamarine": "Аквамарин",
+  "item.additional_rpg_jewelry.malachite": "Малахіт",
+
+  "item.additional_rpg_jewelry.malachite_ring": "Малахітове кільце",
+  "item.additional_rpg_jewelry.netherite_malachite_ring": "Незерито-малахітове кільце",
+  "item.additional_rpg_jewelry.malachite_necklace": "Малахітове намисто",
+  "item.additional_rpg_jewelry.netherite_malachite_necklace": "Незерито-малахітове намисто",
+  "item.additional_rpg_jewelry.aquamarine_ring": "Аквамаринове кільце",
+  "item.additional_rpg_jewelry.netherite_aquamarine_ring": "Незерито-аквамаринове кільце",
+  "item.additional_rpg_jewelry.aquamarine_necklace": "Аквамаринове намисто",
+  "item.additional_rpg_jewelry.netherite_aquamarine_necklace": "Незерито-аквамаринове намисто",
+  "item.additional_rpg_jewelry.rage_ring": "Рунічне кільце вікінгів",
+  "item.additional_rpg_jewelry.netherite_rage_ring": "Незеритове рунічне кільце вікінгів",
+  "item.additional_rpg_jewelry.rage_necklace": "Рунічне намисто вікінгів",
+  "item.additional_rpg_jewelry.netherite_rage_necklace": "Незеритове рунічне намисто вікінгів",
+
+  "item.additional_rpg_jewelry.silver_sapphire_ring": "Срібне сапфірове кільце",
+  "item.additional_rpg_jewelry.steel_jade_ring": "Сталеве нефритове кільце",
+  "item.additional_rpg_jewelry.meteorite_silver_sapphire_ring": "Метеоритне срібне сапфірове кільце",
+  "item.additional_rpg_jewelry.dark_steel_jade_ring": "Темносталеве нефритове кільце",
+  "item.additional_rpg_jewelry.silver_sapphire_necklace": "Срібне сапфірове намисто",
+  "item.additional_rpg_jewelry.steel_jade_necklace": "Сталеве нефритове намисто",
+  "item.additional_rpg_jewelry.meteorite_silver_sapphire_necklace": "Метеоритне срібне сапфірове намисто",
+  "item.additional_rpg_jewelry.dark_steel_jade_necklace": "Темносталеве нефритове намисто",
+
+  "item.additional_rpg_jewelry.unique_rage_ring": "ᛈᛦᛋ",
+  "item.additional_rpg_jewelry.unique_rage_ring.lore": "Це кільце має моторошну ауру. Хто б міг прочитати ці руни?",
+  "item.additional_rpg_jewelry.unique_rage_necklace": "Кулон Сваблода",
+  "item.additional_rpg_jewelry.unique_rage_necklace.lore": "Він проголосив своїм послідовникам лише одну заповідь: Вбивати.",
+
+  "item.additional_rpg_jewelry.unique_earth_ring": "Глибинне обсидіанове кільце",
+  "item.additional_rpg_jewelry.unique_earth_ring.lore": "Викуване глибоко в печерах, можливо, дворфами?",
+  "item.additional_rpg_jewelry.unique_earth_necklace": "Обсидіанова квітка",
+  "item.additional_rpg_jewelry.unique_earth_necklace.lore": "Вона така важка, майже занадто важка.",
+
+  "item.additional_rpg_jewelry.unique_ocean_ring": "Кільце Посейдона",
+  "item.additional_rpg_jewelry.unique_ocean_ring.lore": "Могутнє кільце, яке керує припливами.",
+  "item.additional_rpg_jewelry.unique_ocean_necklace": "Загублений амулет Атлантиди",
+  "item.additional_rpg_jewelry.unique_ocean_necklace.lore": "Загублений релікт із забутої цивілізації.",
+
+  "item.additional_rpg_jewelry.unique_sky_ring": "Занітове ефірне кільце",
+  "item.additional_rpg_jewelry.unique_sky_ring.lore": "Дуже цінна прикраса в Ефірі.",
+  "item.additional_rpg_jewelry.unique_sky_necklace": "Занітовий ефірний кулон",
+  "item.additional_rpg_jewelry.unique_sky_necklace.lore": "Викуваний валькіріями у вимірі Ефіру.",
+
+  "item.additional_rpg_jewelry.unique_forest_ring": "Кільце духа лісу",
+  "item.additional_rpg_jewelry.unique_forest_ring.lore": "Викуване могутніми друїдами в міфічному лісі із Серцем Лісу.",
+  "item.additional_rpg_jewelry.unique_forest_necklace": "Амулет Лешена",
+  "item.additional_rpg_jewelry.unique_forest_necklace.lore": "Створений могутнім друїдом з дерева та серця стародавнього Лешена.",
+
+  "item.additional_rpg_jewelry.vampire_ring": "Кільце Регіса",
+  "item.additional_rpg_jewelry.vampire_ring.lore": "Кільце прагне крові...",
+  "item.additional_rpg_jewelry.vampire_necklace": "Ланцюг Гарашама",
+  "item.additional_rpg_jewelry.vampire_necklace.lore": "Nac thi sel me thaur?",
+  "item.additional_rpg_jewelry.spell_vampire_ring": "Рунічне багряне кільце",
+  "item.additional_rpg_jewelry.spell_vampire_ring.lore": "Викуване злими магами крові, на ньому викарбувані могутні закляття.",
+  "item.additional_rpg_jewelry.spell_vampire_necklace": "Священне багряне намисто",
+  "item.additional_rpg_jewelry.spell_vampire_necklace.lore": "Старе намисто, створене за допомогою магічної сили вампірів.",
+
+  "item.additional_rpg_jewelry.unique_witcher_ring": "Стародавнє кільце Каер Морхену",
+  "item.additional_rpg_jewelry.unique_witcher_ring.lore": "Кільце Школи Вовка від одного з перших відьмаків Каер Морхену.",
+  "item.additional_rpg_jewelry.unique_witcher_necklace": "Ранній срібний медальйон",
+  "item.additional_rpg_jewelry.unique_witcher_necklace.lore": "Нестабільне магічне срібне намисто, створене Альзуром."
+}
