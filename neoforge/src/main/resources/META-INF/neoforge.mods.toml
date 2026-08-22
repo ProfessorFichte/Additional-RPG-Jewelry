@@ -28,6 +28,13 @@ ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.additional_rpg_jewelry]]
+modId = "spell_engine"
+type = "required"
+versionRange = "[${spell_engine_version},)"
+ordering = "BEFORE"
+side = "BOTH"
+
+[[dependencies.additional_rpg_jewelry]]
 modId = "jewelry"
 type = "required"
 versionRange = "[${jewelry_version},)"
