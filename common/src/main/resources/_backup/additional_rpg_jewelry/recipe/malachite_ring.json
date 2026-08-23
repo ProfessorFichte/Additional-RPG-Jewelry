@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:gold_ingot"
+    },
+    "B": {
+      "item": "additional_rpg_jewelry:malachite"
+    }
+  },
+  "pattern": [
+    " B ",
+    "A A",
+    " A "
+  ],
+  "result": {
+    "id": "additional_rpg_jewelry:malachite_ring"
+  }
+}

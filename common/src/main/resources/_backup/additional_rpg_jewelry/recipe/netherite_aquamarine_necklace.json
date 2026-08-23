@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:gold_ingot"
+    },
+    "B": {
+      "item": "minecraft:string"
+    },
+    "C": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "D": {
+      "item": "additional_rpg_jewelry:aquamarine"
+    }
+  },
+  "pattern": [
+    " B ",
+    "ACA",
+    " D "
+  ],
+  "result": {
+    "id": "additional_rpg_jewelry:netherite_aquamarine_necklace"
+  }
+}
