@@ -1,0 +1,80 @@
+{
+  "values": [
+    {
+      "id": "additional_rpg_jewelry:cactea_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:aquamarine_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:malachite_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:rage_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:netherite_aquamarine_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:netherite_malachite_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:netherite_rage_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_ocean_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_sky_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_earth_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_rage_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_forest_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:vampire_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:spell_vampire_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:silver_sapphire_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:steel_jade_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:meteorite_silver_sapphire_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:dark_steel_jade_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_witcher_ring",
+      "required": false
+    }
+  ]
+}

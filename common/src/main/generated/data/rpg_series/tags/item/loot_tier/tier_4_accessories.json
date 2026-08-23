@@ -1,0 +1,68 @@
+{
+  "values": [
+    {
+      "id": "additional_rpg_jewelry:unique_ocean_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_ocean_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_sky_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_sky_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_earth_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_earth_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_rage_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_rage_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_forest_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_forest_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:vampire_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:vampire_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:spell_vampire_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:spell_vampire_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_witcher_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_witcher_necklace",
+      "required": false
+    }
+  ]
+}

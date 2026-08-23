@@ -1,0 +1,80 @@
+{
+  "values": [
+    {
+      "id": "additional_rpg_jewelry:dripstone_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:aquamarine_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:malachite_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:rage_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:netherite_aquamarine_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:netherite_malachite_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:netherite_rage_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_ocean_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_sky_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_earth_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_rage_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_forest_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:vampire_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:spell_vampire_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:silver_sapphire_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:steel_jade_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:meteorite_silver_sapphire_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:dark_steel_jade_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:unique_witcher_necklace",
+      "required": false
+    }
+  ]
+}

@@ -1,5 +1,7 @@
 2.3.0 - 1.21.1
-- Adopt Spell Engine 1.10
+- Adopt Spell Engine 1.10 - Thanks Daedelus for the PR!
+- Implemented Datagen for Models, Translations, Item Tags & Recipes
+
 2.2.2 - 1.21.1
 - fix wrong malachite necklace recipe
 - fix typo with unique forest jewelry (nature spell power)

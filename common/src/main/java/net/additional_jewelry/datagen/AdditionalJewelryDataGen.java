@@ -19,7 +19,11 @@ public class AdditionalJewelryDataGen implements DataGeneratorEntrypoint {
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
         FabricDataGenerator.Pack pack = fabricDataGenerator.createPack();
+        pack.addProvider(LangGenerator::new);
+        pack.addProvider(AdditionalJewelryRecipeProvider::new);
+        pack.addProvider(ModelProvider::new);
         pack.addProvider(UnsmeltGenerator::new);
+        pack.addProvider(ItemTagGenerator::new);
     }
 
     public static class UnsmeltGenerator extends FabricRecipeProvider {
@@ -37,12 +41,12 @@ public class AdditionalJewelryDataGen implements DataGeneratorEntrypoint {
             disassemble(exporter, List.of(AdditionalJewelryItems.rage_necklace.item), Items.IRON_NUGGET);
             disassemble(exporter,
                     AdditionalJewelryItems.all.stream()
-                            .filter(entry -> entry.tier() == 2 && !entry.id().getPath().contains("rage"))
+                            .filter(entry -> entry.tier() == 2 && !entry.id().getPath().contains("rage") && entry.item() != null)
                             .map(entry -> (ItemConvertible) entry.item()).toList(),
                     Items.GOLD_NUGGET);
             disassemble(exporter,
                     AdditionalJewelryItems.all.stream()
-                            .filter(entry -> entry.id().getPath().contains("netherite"))
+                            .filter(entry -> entry.id().getPath().contains("netherite") && entry.item() != null)
                             .map(entry -> (ItemConvertible) entry.item()).toList(),
                     Items.NETHERITE_SCRAP);
         }

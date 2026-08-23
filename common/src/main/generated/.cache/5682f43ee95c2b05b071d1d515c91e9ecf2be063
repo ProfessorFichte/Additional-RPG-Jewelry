@@ -1,0 +1,7 @@
+// 1.21.1	2026-08-23T12:16:56.3300853	Additional RPG Jewelry/Tags for minecraft:item
+a0ecc6aaffe4d69c502ecb874a09439cd38b85d5 data\rpg_series\tags\item\loot_tier\tier_4_accessories.json
+d283d1d45df2d15d050338c2f9d92f76db5715ab data\rpg_series\tags\item\loot_tier\tier_2_accessories.json
+94e2c2a6973ce958f050ce93c7a3faf0e5195199 data\rpg_series\tags\item\loot_tier\tier_3_accessories.json
+03d0bd2fb2cb4c8f45194dc032010cc66b5bf5dd data\jewelry\tags\item\rings.json
+f39093adc5e39048c62e32082f7be9758315912d data\rpg_series\tags\item\loot_tier\tier_1_accessories.json
+44cb46dbbb3c43e457353f7cc3151f36c656e9c8 data\jewelry\tags\item\necklaces.json

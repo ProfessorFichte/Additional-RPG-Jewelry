@@ -1,0 +1,44 @@
+{
+  "values": [
+    {
+      "id": "additional_rpg_jewelry:netherite_aquamarine_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:netherite_malachite_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:netherite_rage_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:netherite_aquamarine_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:netherite_malachite_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:netherite_rage_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:meteorite_silver_sapphire_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:meteorite_silver_sapphire_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:dark_steel_jade_ring",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:dark_steel_jade_necklace",
+      "required": false
+    }
+  ]
+}

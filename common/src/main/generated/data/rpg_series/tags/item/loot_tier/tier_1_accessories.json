@@ -1,0 +1,12 @@
+{
+  "values": [
+    {
+      "id": "additional_rpg_jewelry:dripstone_necklace",
+      "required": false
+    },
+    {
+      "id": "additional_rpg_jewelry:cactea_ring",
+      "required": false
+    }
+  ]
+}
