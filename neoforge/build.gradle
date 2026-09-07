@@ -60,8 +60,6 @@ repositories {
 
     // For Curios
     maven { url 'https://maven.theillusivec4.top/' }
-    // For Forgified Fabric API
-    maven { url 'https://maven.su5ed.dev/releases' }
     maven { url 'https://maven.fabricmc.net' }
 
     mavenLocal()
@@ -71,7 +69,6 @@ dependencies {
     neoForge "net.neoforged:neoforge:$rootProject.neoforge_version"
     common(project(path: ':common', configuration: 'namedElements')) { transitive = false }
     shadowBundle project(path: ':common', configuration: 'transformProductionNeoForge')
-    modImplementation "org.sinytra.forgified-fabric-api:forgified-fabric-api:${project.forgified_fabric_api_version}"
 
     modImplementation("maven.modrinth:tiny-config:${project.tiny_config_version}-${platform}")
 

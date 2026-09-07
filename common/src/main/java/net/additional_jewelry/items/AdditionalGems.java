@@ -1,6 +1,5 @@
 package net.additional_jewelry.items;
 
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -27,11 +26,5 @@ public class AdditionalGems {
         for (var entry : all) {
             Registry.register(Registries.ITEM, entry.id(), entry.item());
         }
-
-        ItemGroupEvents.modifyEntriesEvent(Group.ADDITIONAL_JEWELRY_KEY).register((content) -> {
-            for (var entry : all) {
-                content.add(entry.item());
-            }
-        });
     }
 }

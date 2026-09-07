@@ -1,8 +1,7 @@
 package net.additional_jewelry.items;
 
 import net.additional_jewelry.AdditionalJewelry;
-import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.fabricmc.loader.api.FabricLoader;
+import net.spell_engine.Platform;
 import net.jewelry.items.JewelryFactory;
 import net.jewelry.config.ItemConfig;
 import net.minecraft.component.type.AttributeModifierSlot;
@@ -458,7 +457,10 @@ public class AdditionalJewelryItems {
                     ))).setTier(4).name("Early Silver Medallion").loreText("Unstable magical silver necklace, created by Alzur.").requiredMod("witcher_rpg");
 
             for (var entry : all) {
-                if (entry.requiredMod() != null && !FabricLoader.getInstance().isModLoaded(entry.requiredMod())) {
+                boolean modAvailable = entry.requiredMod() == null
+                        || Platform.util().isModLoaded(entry.requiredMod())
+                        || Platform.util().isDevelopmentEnvironment();
+                if (!modAvailable) {
                     continue;
                 }
                 ItemConfig.Item itemConfig = allConfigs.items.get(entry.id.toString());
@@ -492,12 +494,5 @@ public class AdditionalJewelryItems {
 
                 Registry.register(Registries.ITEM, entry.id(), item);
             }
-            ItemGroupEvents.modifyEntriesEvent(Group.ADDITIONAL_JEWELRY_KEY).register((content) -> {
-                for (var entry : all) {
-                    if (entry.item() != null) {
-                        content.add(entry.item());
-                    }
-                }
-            });
         }
     }

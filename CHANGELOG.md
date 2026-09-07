@@ -1,3 +1,7 @@
+# 2.3.1 - 1.21.1
+- Drop Forgified Fabric API (FFAPI) as a required dependency
+- Fixed the Witcher Compat Jewelry not having an item Model
+
 # 2.3.0 - 1.21.1
 - Adopt Spell Engine 1.10 - Thanks Daedelus for the PR!
 - Implemented Datagen for Models, Translations, Item Tags & Recipes
