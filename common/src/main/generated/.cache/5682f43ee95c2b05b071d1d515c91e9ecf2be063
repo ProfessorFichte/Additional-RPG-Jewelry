@@ -1,7 +1,7 @@
-// 1.21.1	2026-08-25T05:50:18.049637	Additional RPG Jewelry/Tags for minecraft:item
-a0ecc6aaffe4d69c502ecb874a09439cd38b85d5 data\rpg_series\tags\item\loot_tier\tier_4_accessories.json
-d283d1d45df2d15d050338c2f9d92f76db5715ab data\rpg_series\tags\item\loot_tier\tier_2_accessories.json
-94e2c2a6973ce958f050ce93c7a3faf0e5195199 data\rpg_series\tags\item\loot_tier\tier_3_accessories.json
-03d0bd2fb2cb4c8f45194dc032010cc66b5bf5dd data\jewelry\tags\item\rings.json
-44cb46dbbb3c43e457353f7cc3151f36c656e9c8 data\jewelry\tags\item\necklaces.json
-f39093adc5e39048c62e32082f7be9758315912d data\rpg_series\tags\item\loot_tier\tier_1_accessories.json
+// 1.20.1	2026-09-08T11:48:30.714487	Additional RPG Jewelry/Tags for minecraft:item
+51f8f3740bae3df755c9708e26c202da85d22f7a data/jewelry/tags/items/necklaces.json
+64723ae33810bc12b9a6a4d6479236221fbb4202 data/rpg_series/tags/items/loot_tier/tier_2_accessories.json
+33ab315d1c665dc5e0b0776620edcef7b8463545 data/rpg_series/tags/items/loot_tier/tier_3_accessories.json
+a634ccba61102cc0ed54969d92140f2d138e1353 data/rpg_series/tags/items/loot_tier/tier_4_accessories.json
+3b1f69f506a012a534d263826c68305967cbb8a1 data/rpg_series/tags/items/loot_tier/tier_1_accessories.json
+4ad00e6581075294ed6d4533fec3435b47885563 data/jewelry/tags/items/rings.json

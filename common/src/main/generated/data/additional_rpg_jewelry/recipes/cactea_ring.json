@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:cactus"
+    }
+  },
+  "pattern": [
+    " A ",
+    "A A",
+    " A "
+  ],
+  "result": {
+    "item": "additional_rpg_jewelry:cactea_ring"
+  }
+}

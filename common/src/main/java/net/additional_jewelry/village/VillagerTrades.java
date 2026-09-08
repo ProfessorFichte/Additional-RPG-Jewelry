@@ -5,7 +5,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
 import net.minecraft.village.TradeOffer;
 import net.minecraft.village.TradeOffers;
-import net.minecraft.village.TradedItem;
 
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -13,35 +12,29 @@ import java.util.Map;
 
 public class VillagerTrades {
 
+    /// 1.20.1 has no `TradedItem` record: `TradeOffer` takes the buy stack directly
+    /// (`ItemStack buy, ItemStack sell, int maxUses, int merchantExperience, float priceMultiplier`).
+    private static TradeOffers.Factory sell(AdditionalJewelryItems.Entry result, int emeralds,
+                                            int maxUses, int experience) {
+        // The item is resolved inside the factory, exactly as upstream, so trade construction never
+        // depends on registration order.
+        return (entity, random) -> new TradeOffer(
+                new ItemStack(Items.EMERALD, emeralds),
+                new ItemStack(result.item(), 1),
+                maxUses, experience, 0.1F);
+    }
+
     public static Map<Integer, List<TradeOffers.Factory>> createTrades() {
         Map<Integer, List<TradeOffers.Factory>> trades = new LinkedHashMap<>();
         trades.put(4, List.of(
-                (entity, random) -> new TradeOffer(
-                        new TradedItem(Items.EMERALD, 35),
-                        new ItemStack(AdditionalJewelryItems.malachite_ring.item(), 1),
-                        5, 13, 0.1F),
-                (entity, random) -> new TradeOffer(
-                        new TradedItem(Items.EMERALD, 35),
-                        new ItemStack(AdditionalJewelryItems.aquamarine_ring.item(), 1),
-                        5, 13, 0.1F),
-                (entity, random) -> new TradeOffer(
-                        new TradedItem(Items.EMERALD, 35),
-                        new ItemStack(AdditionalJewelryItems.rage_ring.item(), 1),
-                        5, 13, 0.1F)
+                sell(AdditionalJewelryItems.malachite_ring, 35, 5, 13),
+                sell(AdditionalJewelryItems.aquamarine_ring, 35, 5, 13),
+                sell(AdditionalJewelryItems.rage_ring, 35, 5, 13)
         ));
         trades.put(5, List.of(
-                (entity, random) -> new TradeOffer(
-                        new TradedItem(Items.EMERALD, 45),
-                        new ItemStack(AdditionalJewelryItems.malachite_necklace.item(), 1),
-                        3, 15, 0.1F),
-                (entity, random) -> new TradeOffer(
-                        new TradedItem(Items.EMERALD, 45),
-                        new ItemStack(AdditionalJewelryItems.aquamarine_necklace.item(), 1),
-                        3, 15, 0.1F),
-                (entity, random) -> new TradeOffer(
-                        new TradedItem(Items.EMERALD, 45),
-                        new ItemStack(AdditionalJewelryItems.rage_necklace.item(), 1),
-                        3, 15, 0.1F)
+                sell(AdditionalJewelryItems.malachite_necklace, 45, 3, 15),
+                sell(AdditionalJewelryItems.aquamarine_necklace, 45, 3, 15),
+                sell(AdditionalJewelryItems.rage_necklace, 45, 3, 15)
         ));
         return trades;
     }

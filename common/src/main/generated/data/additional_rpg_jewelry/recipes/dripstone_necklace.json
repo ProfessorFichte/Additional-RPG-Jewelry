@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "A": {
+      "item": "minecraft:string"
+    },
+    "B": {
+      "item": "minecraft:pointed_dripstone"
+    }
+  },
+  "pattern": [
+    " A ",
+    " A ",
+    " B "
+  ],
+  "result": {
+    "item": "additional_rpg_jewelry:dripstone_necklace"
+  }
+}
