@@ -389,7 +389,17 @@ public class AdditionalJewelryItems {
     /// pieces in two accessory slots never collide. Jewelry itself uses a per-item, per-attribute id;
     /// switch to that shape here too if a piece ever needs two modifiers on one attribute.
     private static final Identifier modifierId = Identifier.of(MOD_ID, "equipment_bonus");
-        public static void register (ItemConfig allConfigs){
+    private static boolean conditionalEntriesAdded = false;
+
+        /// The mod-gated (Witcher RPG) pieces are appended to `all` here rather than at class init.
+        /// Upstream did this inside `register(...)` itself, which made a second call double-register
+        /// them; the flag makes the creation half idempotent so `itemsToRegister` is safe to call
+        /// from either loader path.
+        private static void addConditionalEntries() {
+            if (conditionalEntriesAdded) {
+                return;
+            }
+            conditionalEntriesAdded = true;
             final String ADRENALINE = "witcher_rpg:adrenaline_modifier";
             final String SIGN_INTENSITY = "witcher_rpg:sign_intensity";
             final String QUEN_INTENSITY = "witcher_rpg:quen_intensity";
@@ -459,11 +469,23 @@ public class AdditionalJewelryItems {
                             new ItemConfig.AttributeModifier(SIGN_INTENSITY, 0.08F, EntityAttributeModifier.Operation.MULTIPLY_BASE)
                     ))).setTier(4).name("Early Silver Medallion").loreText("Unstable magical silver necklace, created by Alzur.").requiredMod("witcher_rpg");
 
+        }
+
+        /// Creation half of `register(...)`: configs applied, items constructed, nothing written to the
+        /// registry. The Forge entrypoint feeds the returned map to the helper `RegisterEvent` hands out,
+        /// because on Forge 47.0-47.3 the vanilla ITEM registry stays locked inside the window and a plain
+        /// `Registry.register` throws. Idempotent - ids already in the registry are skipped.
+        public static Map<Identifier, Item> itemsToRegister(ItemConfig allConfigs) {
+            addConditionalEntries();
+            var items = new LinkedHashMap<Identifier, Item>();
             for (var entry : all) {
                 boolean modAvailable = entry.requiredMod() == null
                         || Platform.util().isModLoaded(entry.requiredMod())
                         || Platform.util().isDevelopmentEnvironment();
                 if (!modAvailable) {
+                    continue;
+                }
+                if (Registries.ITEM.containsId(entry.id())) {
                     continue;
                 }
                 ItemConfig.Item itemConfig = allConfigs.items.get(entry.id.toString());
@@ -498,7 +520,12 @@ public class AdditionalJewelryItems {
 
                 var item = entry.create(settings.maxCount(1), new JewelryModifiers(List.copyOf(modifiers)));
 
-                Registry.register(Registries.ITEM, entry.id(), item);
+                items.put(entry.id(), item);
             }
+            return items;
+        }
+
+        public static void register (ItemConfig allConfigs){
+            itemsToRegister(allConfigs).forEach((id, item) -> Registry.register(Registries.ITEM, id, item));
         }
     }

@@ -40,11 +40,25 @@ public final class ForgeMod {
         MinecraftForge.EVENT_BUS.addListener(EventPriority.NORMAL, false, VillagerTradesEvent.class, ForgeMod::onVillagerTrades);
     }
 
-    /// Forge 47 unfreezes exactly one registry per `RegisterEvent` window. This mod only adds items;
-    /// the item group is a vanilla-only registry that never gets a window of its own and stays
-    /// unfrozen for the whole phase, so `registerItems()` can create it from here.
+    /// Forge 47.0-47.3 leave the *vanilla* registry locked even inside the correct `RegisterEvent`
+    /// window (only 47.4.0+ clears `NamespacedWrapper`'s own lock), so `common`'s Architectury-shaped
+    /// `Registry.register` throws there. Everything this mod adds is therefore written through the
+    /// helper `RegisterEvent` hands out, one block per registry. The loops duplicate `common`'s on
+    /// purpose - Fabric keeps calling `AdditionalJewelry.registerItems()` unchanged.
     public static void register(RegisterEvent event) {
-        event.register(RegistryKeys.ITEM, reg -> AdditionalJewelry.registerItems());
+        event.register(RegistryKeys.ITEM, helper -> {
+            AdditionalGems.itemsToRegister().forEach(helper::register);
+            AdditionalJewelryItems.itemsToRegister(AdditionalJewelry.itemConfig.value).forEach(helper::register);
+            // Trailing side effect of common's registerItems(): persist any config entries the item
+            // pass just defaulted in.
+            AdditionalJewelry.itemConfig.save();
+        });
+        // `creative_mode_tab` is event 65, `item` is event 7 - the group gets its own block rather than
+        // riding along in the ITEM pass.
+        event.register(RegistryKeys.ITEM_GROUP, helper -> {
+            AdditionalJewelry.createItemGroup();
+            helper.register(Group.ADDITIONAL_JEWELRY_KEY, Group.ADDITIONAL_JEWELRY);
+        });
     }
 
     private static void buildTabContents(BuildCreativeModeTabContentsEvent event) {

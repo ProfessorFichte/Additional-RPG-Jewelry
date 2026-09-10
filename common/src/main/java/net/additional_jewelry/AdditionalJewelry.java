@@ -30,12 +30,19 @@ public class AdditionalJewelry{
 		itemConfig.refresh();
 	}
 
-	public static void registerItems() {
+	/// Creation half of the item group, split out so the Forge entrypoint can build it inside its own
+	/// `creative_mode_tab` `RegisterEvent` window instead of riding along in the ITEM one. The icon is a
+	/// supplier, so this does not depend on the items existing yet.
+	public static void createItemGroup() {
 		// FabricItemGroup.builder() is Fabric-API-only; a vanilla ItemGroup.Builder works identically on both loaders.
 		Group.ADDITIONAL_JEWELRY = new ItemGroup.Builder(ItemGroup.Row.TOP, 0)
 				.icon(() -> new ItemStack(AdditionalJewelryItems.malachite_ring.item()))
 				.displayName(Text.translatable("itemGroup." + MOD_ID + ".general"))
 				.build();
+	}
+
+	public static void registerItems() {
+		createItemGroup();
 		Registry.register(Registries.ITEM_GROUP, Group.ADDITIONAL_JEWELRY_KEY, Group.ADDITIONAL_JEWELRY);
 		AdditionalGems.register();
 		AdditionalJewelryItems.register(itemConfig.value);
