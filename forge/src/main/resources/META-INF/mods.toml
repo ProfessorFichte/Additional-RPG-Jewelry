@@ -1,0 +1,58 @@
+modLoader = "javafml"
+loaderVersion = "[47,)"
+#issueTrackerURL = ""
+license = "ARR"
+
+[[mods]]
+modId = "additional_rpg_jewelry"
+version = "${version}"
+displayName = "Additional Jewelry"
+authors = "Fichte"
+description = '''
+Add-On for the Jewelry Mod, adding jewelry for the More RPG Classes Series.
+'''
+#logoFile = ""
+
+[[dependencies.additional_rpg_jewelry]]
+modId = "forge"
+mandatory = true
+versionRange = "[47,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.additional_rpg_jewelry]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.additional_rpg_jewelry]]
+modId = "spell_engine"
+mandatory = true
+versionRange = "[1.10.5,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.additional_rpg_jewelry]]
+modId = "more_rpg_classes"
+mandatory = true
+versionRange = "[2.7.2,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.additional_rpg_jewelry]]
+modId = "jewelry"
+mandatory = true
+versionRange = "[2.4.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+# Forge 47 refuses an optional dependency block without a versionRange
+# (`ModSorter: Unsupported installed optional dependencies ... Expected range: ''`).
+[[dependencies.additional_rpg_jewelry]]
+modId = "curios"
+mandatory = false
+versionRange = "[5.14,)"
+ordering = "AFTER"
+side = "BOTH"

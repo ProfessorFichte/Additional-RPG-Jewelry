@@ -7,6 +7,8 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
 import java.util.ArrayList;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 import static net.additional_jewelry.AdditionalJewelry.MOD_ID;
 
@@ -22,9 +24,22 @@ public class AdditionalGems {
     public static final Entry aquamarine = gem(Identifier.of(MOD_ID, "aquamarine"));
     public static final Entry malachite = gem(Identifier.of(MOD_ID, "malachite"));
 
-    public static void register() {
+    /// Creation half of `register()`, kept separate so the Forge entrypoint can write these through the
+    /// helper `RegisterEvent` hands out: on Forge 47.0-47.3 the vanilla ITEM registry stays locked even
+    /// inside the correct window, so a plain `Registry.register` throws there. Idempotent - the items are
+    /// built once at class init, and ids already in the registry are skipped.
+    public static Map<Identifier, Item> itemsToRegister() {
+        var items = new LinkedHashMap<Identifier, Item>();
         for (var entry : all) {
-            Registry.register(Registries.ITEM, entry.id(), entry.item());
+            if (Registries.ITEM.containsId(entry.id())) {
+                continue;
+            }
+            items.put(entry.id(), entry.item());
         }
+        return items;
+    }
+
+    public static void register() {
+        itemsToRegister().forEach((id, item) -> Registry.register(Registries.ITEM, id, item));
     }
 }

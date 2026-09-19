@@ -48,7 +48,7 @@ public final class FabricMod implements ModInitializer {
     private static void registerBuiltinResourcePack() {
         FabricLoader.getInstance().getModContainer(AdditionalJewelry.MOD_ID).ifPresent(modContainer -> {
             ResourceManagerHelper.registerBuiltinResourcePack(
-                    Identifier.of(AdditionalJewelry.MOD_ID, "jewelry_changes"),
+                    new Identifier(AdditionalJewelry.MOD_ID, "jewelry_changes"),
                     modContainer,
                     ResourcePackActivationType.ALWAYS_ENABLED
             );
