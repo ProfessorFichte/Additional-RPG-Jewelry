@@ -30,9 +30,6 @@ public class AdditionalJewelry{
 		itemConfig.refresh();
 	}
 
-	/// Creation half of the item group, split out so the Forge entrypoint can build it inside its own
-	/// `creative_mode_tab` `RegisterEvent` window instead of riding along in the ITEM one. The icon is a
-	/// supplier, so this does not depend on the items existing yet.
 	public static void createItemGroup() {
 		// FabricItemGroup.builder() is Fabric-API-only; a vanilla ItemGroup.Builder works identically on both loaders.
 		Group.ADDITIONAL_JEWELRY = new ItemGroup.Builder(ItemGroup.Row.TOP, 0)

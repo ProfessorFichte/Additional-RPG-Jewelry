@@ -48,8 +48,6 @@ versionRange = "[2.4.0,)"
 ordering = "AFTER"
 side = "BOTH"
 
-# Forge 47 refuses an optional dependency block without a versionRange
-# (`ModSorter: Unsupported installed optional dependencies ... Expected range: ''`).
 [[dependencies.additional_rpg_jewelry]]
 modId = "curios"
 mandatory = false

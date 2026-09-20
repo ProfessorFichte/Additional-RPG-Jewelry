@@ -12,12 +12,8 @@ import java.util.Map;
 
 public class VillagerTrades {
 
-    /// 1.20.1 has no `TradedItem` record: `TradeOffer` takes the buy stack directly
-    /// (`ItemStack buy, ItemStack sell, int maxUses, int merchantExperience, float priceMultiplier`).
     private static TradeOffers.Factory sell(AdditionalJewelryItems.Entry result, int emeralds,
                                             int maxUses, int experience) {
-        // The item is resolved inside the factory, exactly as upstream, so trade construction never
-        // depends on registration order.
         return (entity, random) -> new TradeOffer(
                 new ItemStack(Items.EMERALD, emeralds),
                 new ItemStack(result.item(), 1),

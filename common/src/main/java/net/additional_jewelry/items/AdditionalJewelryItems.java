@@ -383,18 +383,9 @@ public class AdditionalJewelryItems {
             )
     )).setTier(4).name("Sacred Scarlet Necklace").loreText("Old Necklace created with vampiric magic power.");
 
-    /// One shared modifier id for every bonus of every piece, exactly as on 1.21.1. Under 1.20.1's
-    /// UUID keying that is still safe: no item carries two bonuses on the *same* attribute, and the
-    /// equipped path folds the slot mod's per-slot UUID into the key (see `JewelryModifiers`), so two
-    /// pieces in two accessory slots never collide. Jewelry itself uses a per-item, per-attribute id;
-    /// switch to that shape here too if a piece ever needs two modifiers on one attribute.
     private static final Identifier modifierId = Identifier.of(MOD_ID, "equipment_bonus");
     private static boolean conditionalEntriesAdded = false;
 
-        /// The mod-gated (Witcher RPG) pieces are appended to `all` here rather than at class init.
-        /// Upstream did this inside `register(...)` itself, which made a second call double-register
-        /// them; the flag makes the creation half idempotent so `itemsToRegister` is safe to call
-        /// from either loader path.
         private static void addConditionalEntries() {
             if (conditionalEntriesAdded) {
                 return;
@@ -471,10 +462,6 @@ public class AdditionalJewelryItems {
 
         }
 
-        /// Creation half of `register(...)`: configs applied, items constructed, nothing written to the
-        /// registry. The Forge entrypoint feeds the returned map to the helper `RegisterEvent` hands out,
-        /// because on Forge 47.0-47.3 the vanilla ITEM registry stays locked inside the window and a plain
-        /// `Registry.register` throws. Idempotent - ids already in the registry are skipped.
         public static Map<Identifier, Item> itemsToRegister(ItemConfig allConfigs) {
             addConditionalEntries();
             var items = new LinkedHashMap<Identifier, Item>();
@@ -494,15 +481,9 @@ public class AdditionalJewelryItems {
                     allConfigs.items.put(entry.id.toString(), entry.config);
                 }
 
-                // 1.20.1 has no attribute-modifier item component: bonuses ride Jewelry's
-                // `JewelryModifiers` stand-in, whose namespaced modifier id becomes a stable UUID
-                // (SpellPower's `ModifierDefinitions.uuid`) and, once equipped, is folded together with
-                // the slot mod's per-slot UUID so pieces still stack across accessory slots.
                 var modifiers = new ArrayList<JewelryModifiers.Entry>();
                 for (var modifier : itemConfig.selectedAttributes()) {
                     var id = new Identifier(modifier.id);
-                    // 1.20.1 registries have no `getEntry(Identifier)`. An unresolvable attribute (a
-                    // companion mod that is not installed) simply drops that one bonus, as on 1.21.1.
                     var attribute = Registries.ATTRIBUTE.getOrEmpty(id);
                     if (attribute.isPresent()) {
                         modifiers.add(new JewelryModifiers.Entry(

@@ -40,7 +40,6 @@ public class AdditionalJewelryRecipeProvider implements DataProvider {
 
         return CompletableFuture.allOf(recipes.stream().map(recipeData -> {
             JsonObject recipe = buildRecipeJson(recipeData);
-            // 1.20.1 datapack directory is `recipes/`, not `recipe/`.
             Path path = output.getResolver(net.minecraft.data.DataOutput.OutputType.DATA_PACK, "recipes")
                     .resolveJson(new Identifier(MOD_ID, recipeData.name));
 
@@ -262,9 +261,6 @@ public class AdditionalJewelryRecipeProvider implements DataProvider {
             fabricLoadConditions.add(fabricCondition);
             recipe.add("fabric:load_conditions", fabricLoadConditions);
 
-            // Forge 47 reads a plain top-level `conditions` array; `forge:conditions` /
-            // `neoforge:conditions` are keys it does not know, and the recipe would then parse and
-            // fail on the unloaded modded ingredient.
             JsonArray forgeConditions = new JsonArray();
             if (data.requiredMods.length == 1) {
                 JsonObject forgeCondition = new JsonObject();
@@ -325,7 +321,6 @@ public class AdditionalJewelryRecipeProvider implements DataProvider {
         }
         recipe.add("pattern", pattern);
 
-        // Result -- 1.20.1 recipe results are keyed by `item`, not `id`
         JsonObject result = new JsonObject();
         result.addProperty("item", MOD_ID + ":" + data.name);
         recipe.add("result", result);
