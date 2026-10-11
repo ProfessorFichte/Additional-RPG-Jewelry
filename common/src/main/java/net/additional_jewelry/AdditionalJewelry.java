@@ -20,7 +20,7 @@ public class AdditionalJewelry{
     public static final Logger LOGGER = LoggerFactory.getLogger("additional_rpg_jewelry");
 
 	public static ConfigManager<ItemConfig> itemConfig = new ConfigManager<>
-			("items_v2", Default.items)
+			("items_v3", Default.items)
 			.builder()
 			.setDirectory(MOD_ID)
 			.sanitize(true)
@@ -31,7 +31,6 @@ public class AdditionalJewelry{
 	}
 
 	public static void registerItems() {
-		// FabricItemGroup.builder() is Fabric-API-only; a vanilla ItemGroup.Builder works identically on both loaders.
 		Group.ADDITIONAL_JEWELRY = new ItemGroup.Builder(ItemGroup.Row.TOP, 0)
 				.icon(() -> new ItemStack(AdditionalJewelryItems.malachite_ring.item()))
 				.displayName(Text.translatable("itemGroup." + MOD_ID + ".general"))

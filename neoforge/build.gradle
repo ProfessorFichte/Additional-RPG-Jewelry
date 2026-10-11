@@ -62,7 +62,9 @@ repositories {
     maven { url 'https://maven.theillusivec4.top/' }
     maven { url 'https://maven.fabricmc.net' }
 
-    mavenLocal()
+    mavenLocal {
+        content { excludeModule('maven.modrinth', 'more-rpg-library') }
+    }
 }
 
 dependencies {

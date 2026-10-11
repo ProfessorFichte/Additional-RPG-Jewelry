@@ -24,6 +24,7 @@ public class AdditionalJewelryDataGen implements DataGeneratorEntrypoint {
         pack.addProvider(ModelProvider::new);
         pack.addProvider(UnsmeltGenerator::new);
         pack.addProvider(ItemTagGenerator::new);
+        pack.addProvider(AdditionalGemCutGenerator::new);
     }
 
     public static class UnsmeltGenerator extends FabricRecipeProvider {

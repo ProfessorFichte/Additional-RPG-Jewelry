@@ -1,0 +1,9 @@
+{
+  "bonus": {
+    "attribute": "mrpg_lib:rage_modifier",
+    "operation": "add_multiplied_base",
+    "value": 0.05
+  },
+  "color": "#0BDA51",
+  "gem": "additional_rpg_jewelry:malachite"
+}

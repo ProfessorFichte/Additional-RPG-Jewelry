@@ -12,6 +12,8 @@ import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.fabricmc.fabric.api.resource.ResourceManagerHelper;
 import net.fabricmc.fabric.api.resource.ResourcePackActivationType;
 import net.fabricmc.loader.api.FabricLoader;
+import net.jewelry.items.Gems;
+import net.jewelry.items.JewelryItem;
 import net.jewelry.village.JewelryVillagers;
 import net.minecraft.util.Identifier;
 
@@ -25,14 +27,15 @@ public final class FabricMod implements ModInitializer {
         registerBuiltinResourcePack();
 
         ItemGroupEvents.modifyEntriesEvent(Group.ADDITIONAL_JEWELRY_KEY).register((content) -> {
-            for (var entry : AdditionalGems.all) {
-                content.add(entry.item());
-            }
             for (var entry : AdditionalJewelryItems.all) {
                 if (entry.item() != null) {
                     content.add(entry.item());
                 }
             }
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(net.jewelry.items.Group.GEMS_KEY).register((content) -> {
+            content.addAfter(Gems.tanzanite.item(), AdditionalGems.aquamarine.item(), AdditionalGems.malachite.item());
         });
     }
 

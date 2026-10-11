@@ -6,7 +6,10 @@ import net.additional_jewelry.items.AdditionalGems;
 import net.additional_jewelry.items.AdditionalJewelryItems;
 import net.additional_jewelry.items.Group;
 import net.additional_jewelry.village.VillagerTrades;
+import net.jewelry.items.Gems;
 import net.jewelry.village.JewelryVillagers;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.item.ItemStack;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.resource.ResourcePackProfile;
 import net.minecraft.resource.ResourcePackSource;
@@ -39,16 +42,23 @@ public final class NeoForgeMod {
     }
 
     private static void buildTabContents(BuildCreativeModeTabContentsEvent event) {
-        if (!event.getTabKey().equals(Group.ADDITIONAL_JEWELRY_KEY)) {
-            return;
-        }
-        for (var entry : AdditionalGems.all) {
-            event.add(entry.item());
-        }
-        for (var entry : AdditionalJewelryItems.all) {
-            if (entry.item() != null) {
+        if (event.getTabKey().equals(Group.ADDITIONAL_JEWELRY_KEY)) {
+            for (var entry : AdditionalGems.all) {
                 event.add(entry.item());
             }
+            for (var entry : AdditionalJewelryItems.all) {
+                if (entry.item() != null) {
+                    event.add(entry.item());
+                }
+            }
+            return;
+        }
+        if (event.getTabKey().equals(net.jewelry.items.Group.GEMS_KEY)) {
+            var tanzaniteStack = new ItemStack(Gems.tanzanite.item());
+            var aquamarineStack = new ItemStack(AdditionalGems.aquamarine.item());
+            var malachiteStack = new ItemStack(AdditionalGems.malachite.item());
+            event.insertAfter(tanzaniteStack, aquamarineStack, ItemGroup.StackVisibility.PARENT_AND_SEARCH_TABS);
+            event.insertAfter(aquamarineStack, malachiteStack, ItemGroup.StackVisibility.PARENT_AND_SEARCH_TABS);
         }
     }
 

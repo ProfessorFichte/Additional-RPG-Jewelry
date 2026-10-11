@@ -1,0 +1,9 @@
+{
+  "bonus": {
+    "attribute": "mrpg_lib:damage_reflect_modifier",
+    "operation": "add_multiplied_base",
+    "value": 0.03
+  },
+  "color": "#0BDA51",
+  "gem": "additional_rpg_jewelry:malachite"
+}

@@ -30,7 +30,7 @@
 		"java": ">=21",
 		"fabric-api": "*",
 		"spell_engine": ">=${spell_engine_version}",
-		"more_rpg_classes": ">=${more_rpg_library_version}",
+		"mrpg_lib": ">=${more_rpg_library_version}",
 		"jewelry": ">=${jewelry_version}"
 	},
 	"suggests": {

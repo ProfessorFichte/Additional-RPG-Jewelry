@@ -1,3 +1,8 @@
+# 2.4.0 - 1.21.1
+- Adopt More RPG Library 2.8.0
+- **MODPACK DEVS:** More RPG Library 2.8.0 renamed its mod id from `more_rpg_classes` to `mrpg_lib` (Java packages, registry ids, spells, tags, loot functions). This mod does not reference any `more_rpg_classes:`-namespaced ids in its own data files, but if your datapack/modpack references More RPG Library content directly by namespace, update those references too
+- Added Gem cuts for the mrpg-lib Attributes using Jewelrys new Gem Socketing System 
+
 # 2.3.1 - 1.21.1
 - Drop Forgified Fabric API (FFAPI) as a required dependency
 - Fixed the Witcher Compat Jewelry not having an item Model

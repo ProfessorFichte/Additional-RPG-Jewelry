@@ -1,0 +1,9 @@
+{
+  "bonus": {
+    "attribute": "mrpg_lib:tenacity",
+    "operation": "add_multiplied_base",
+    "value": 0.03
+  },
+  "color": "#2FD8CB",
+  "gem": "additional_rpg_jewelry:aquamarine"
+}

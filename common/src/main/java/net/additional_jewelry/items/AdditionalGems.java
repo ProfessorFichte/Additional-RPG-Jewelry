@@ -1,5 +1,6 @@
 package net.additional_jewelry.items;
 
+import net.jewelry.gems.GemItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -14,7 +15,7 @@ public class AdditionalGems {
     public record Entry(Identifier id, Item item) { }
     public static ArrayList<Entry> all = new ArrayList<>();
     public static Entry gem(Identifier id) {
-        var entry = new Entry(id, new Item(new Item.Settings().rarity(Rarity.UNCOMMON)));
+        var entry = new Entry(id, new GemItem(new Item.Settings().rarity(Rarity.UNCOMMON)));
         all.add(entry);
         return entry;
     }

@@ -12,7 +12,7 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
-import net.more_rpg_classes.custom.MoreSpellSchools;
+import com.mrpg_lib.compat.spell_power.MoreSpellSchools;
 import net.spell_power.api.SpellPowerMechanics;
 import net.spell_power.api.SpellSchools;
 
@@ -152,10 +152,11 @@ public class AdditionalJewelryItems {
     public static final String CRITICAL_CHANCE_ID = CRIT_MOD_ID + ":chance";
     public static final String CRITICAL_DAMAGE_ID = CRIT_MOD_ID + ":damage";
 
-    public static final String DAMAGE_REFLECT = "more_rpg_classes:damage_reflect_modifier";
-    public static final String RAGE = "more_rpg_classes:rage_modifier";
-    public static final String LIFESTEAL = "more_rpg_classes:lifesteal_modifier";
-    public static final String SPELL_VAMPIRE = "more_rpg_classes:spell_vampire";
+    public static final String DAMAGE_REFLECT = "mrpg_lib:damage_reflect_modifier";
+    public static final String RAGE = "mrpg_lib:rage_modifier";
+    public static final String LIFESTEAL = "mrpg_lib:lifesteal_modifier";
+    public static final String SPELL_VAMPIRE = "mrpg_lib:spell_vampire";
+    public static final String TENACITY = "mrpg_lib:tenacity";
 
 
 

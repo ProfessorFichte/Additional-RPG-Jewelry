@@ -35,6 +35,13 @@ ordering = "BEFORE"
 side = "BOTH"
 
 [[dependencies.additional_rpg_jewelry]]
+modId = "mrpg_lib"
+type = "required"
+versionRange = "[${more_rpg_library_version},)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.additional_rpg_jewelry]]
 modId = "jewelry"
 type = "required"
 versionRange = "[${jewelry_version},)"

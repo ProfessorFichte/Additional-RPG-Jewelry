@@ -27,7 +27,9 @@ repositories {
 
     maven { url 'https://maven.fabricmc.net' }
 
-    mavenLocal()
+    mavenLocal {
+        content { excludeModule('maven.modrinth', 'more-rpg-library') }
+    }
 }
 
 dependencies {

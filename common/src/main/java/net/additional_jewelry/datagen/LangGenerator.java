@@ -1,9 +1,11 @@
 package net.additional_jewelry.datagen;
 
+import net.additional_jewelry.items.AdditionalGemCuts;
 import net.additional_jewelry.items.AdditionalGems;
 import net.additional_jewelry.items.AdditionalJewelryItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
+import net.jewelry.gems.GemCut;
 import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
@@ -33,5 +35,19 @@ public class LangGenerator extends FabricLanguageProvider {
             String translatedName = name.substring(0, 1).toUpperCase() + name.substring(1);
             builder.add(gem.item(), translatedName);
         }
+
+        for (var cut : AdditionalGemCuts.all) {
+            builder.add(GemCut.translationKey(cut.id()), titleCase(cut.id().getPath()));
+        }
+    }
+
+    private static String titleCase(String path) {
+        var words = path.split("_");
+        var result = new StringBuilder();
+        for (var word : words) {
+            if (!result.isEmpty()) result.append(" ");
+            result.append(Character.toUpperCase(word.charAt(0))).append(word.substring(1));
+        }
+        return result.toString();
     }
 }
